@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\gestion_fomation_back_end_local.props" />
+</Project>
