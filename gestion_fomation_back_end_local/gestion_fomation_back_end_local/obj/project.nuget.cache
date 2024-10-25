@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OfxPSRFCxiQ=",
+  "dgSpecHash": "SMRGCsuei54=",
   "success": true,
-  "projectFilePath": "D:\\Fianarana\\STAGE\\repo\\gestion_fomation_back_end_local\\gestion_fomation_back_end_local\\gestion_fomation_back_end_local.csproj",
+  "projectFilePath": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\gestion_fomation_back_end_local\\gestion_fomation_back_end_local\\gestion_fomation_back_end_local.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ranai\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ranai\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

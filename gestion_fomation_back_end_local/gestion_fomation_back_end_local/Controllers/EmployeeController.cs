@@ -1,6 +1,7 @@
 ﻿using gestion_fomation_back_end_local.Models.models;
 using gestion_fomation_back_end_local.Models.repository;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace gestion_fomation_back_end_local.Controllers
 {
@@ -21,6 +22,18 @@ namespace gestion_fomation_back_end_local.Controllers
         {
             var employees = await _employeeRepository.GetAllEmployeesAsync();
             return Ok(employees);
+        }
+
+        // GET: api/Employee/with-departments with pagination and filter
+        [HttpGet("withDepartments")]
+        public async Task<IActionResult> GetEmployeesWithDepartments(int? departmentId = null, string? name = null, int page = 1, int limit = 10)
+        {
+            var (employeesWithDepartments, totalEmployees) = await _employeeRepository.GetEmployeesWithDepartments(departmentId, name, page, limit);
+            return Ok(new
+            {
+                total = totalEmployees,
+                employees = employeesWithDepartments
+            });
         }
 
         // GET: api/Employee/5

@@ -37,6 +37,10 @@ namespace gestion_fomation_back_end_local.Models.repository
             return await _context.TrainingSession.ToListAsync();
         }
 
+        public async Task<List<TrainingSession>> GetAllTrainingSessionsByTrainingIdAsync(int trainingId)
+        {
+            return await _context.TrainingSession.Where(e => e.TrainingId == trainingId).ToListAsync();
+        }
         // READ (Get training session by ID)
         public async Task<TrainingSession?> GetTrainingSessionByIdAsync(int id)
         {

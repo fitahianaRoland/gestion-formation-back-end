@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EqPZ26g3XtG8pEG9mHaAEPDWvTMss2n+uvOzmCxki9g=",
+  "Hash": "11pRmDBMka9cpqBBy8JlLe7uWR1TLeMO3Bt4cIQaoSM=",
   "Source": "gestion_fomation_back_end_local",
   "BasePath": "_content/gestion_fomation_back_end_local",
   "Mode": "Default",
@@ -47,10 +47,10 @@
       "OriginalItemSpec": "C:\\Users\\ranai\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.8\\staticwebassets\\QuickGrid.razor.js"
     },
     {
-      "Identity": "D:\\Fianarana\\STAGE\\repo\\gestion_fomation_back_end_local\\gestion_fomation_back_end_local\\obj\\Debug\\net8.0\\scopedcss\\bundle\\gestion_fomation_back_end_local.styles.css",
+      "Identity": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\gestion_fomation_back_end_local\\gestion_fomation_back_end_local\\obj\\Debug\\net8.0\\scopedcss\\bundle\\gestion_fomation_back_end_local.styles.css",
       "SourceId": "gestion_fomation_back_end_local",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Fianarana\\STAGE\\repo\\gestion_fomation_back_end_local\\gestion_fomation_back_end_local\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\gestion_fomation_back_end_local\\gestion_fomation_back_end_local\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/gestion_fomation_back_end_local",
       "RelativePath": "gestion_fomation_back_end_local.styles.css",
       "AssetKind": "All",
@@ -63,7 +63,7 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Fianarana\\STAGE\\repo\\gestion_fomation_back_end_local\\gestion_fomation_back_end_local\\obj\\Debug\\net8.0\\scopedcss\\bundle\\gestion_fomation_back_end_local.styles.css"
+      "OriginalItemSpec": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\gestion_fomation_back_end_local\\gestion_fomation_back_end_local\\obj\\Debug\\net8.0\\scopedcss\\bundle\\gestion_fomation_back_end_local.styles.css"
     }
   ]
 }

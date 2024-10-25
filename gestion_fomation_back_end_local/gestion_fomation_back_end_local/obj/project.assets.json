@@ -8661,11 +8661,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Fianarana\\STAGE\\repo\\gestion_fomation_back_end_local\\gestion_fomation_back_end_local\\gestion_fomation_back_end_local.csproj",
+      "projectUniqueName": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\gestion_fomation_back_end_local\\gestion_fomation_back_end_local\\gestion_fomation_back_end_local.csproj",
       "projectName": "gestion_fomation_back_end_local",
-      "projectPath": "D:\\Fianarana\\STAGE\\repo\\gestion_fomation_back_end_local\\gestion_fomation_back_end_local\\gestion_fomation_back_end_local.csproj",
+      "projectPath": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\gestion_fomation_back_end_local\\gestion_fomation_back_end_local\\gestion_fomation_back_end_local.csproj",
       "packagesPath": "C:\\Users\\ranai\\.nuget\\packages\\",
-      "outputPath": "D:\\Fianarana\\STAGE\\repo\\gestion_fomation_back_end_local\\gestion_fomation_back_end_local\\obj\\",
+      "outputPath": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\gestion_fomation_back_end_local\\gestion_fomation_back_end_local\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ranai\\AppData\\Roaming\\NuGet\\NuGet.Config",

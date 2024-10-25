@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("gestion_fomation_back_end_local")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e505776c4920c9d844e5c39409cbd5b2e6f39de6")]
 [assembly: System.Reflection.AssemblyProductAttribute("gestion_fomation_back_end_local")]
 [assembly: System.Reflection.AssemblyTitleAttribute("gestion_fomation_back_end_local")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
