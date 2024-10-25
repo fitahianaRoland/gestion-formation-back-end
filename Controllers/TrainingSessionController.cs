@@ -19,6 +19,7 @@ namespace gestion_fomation_back_end_local.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllTrainingSessions()
         {
+            Console.WriteLine("GetAllTrainingSessions : ");
             var trainingSessions = await _trainingSessionRepository.GetAllTrainingSessionsAsync();
             return Ok(trainingSessions);
         }
@@ -27,6 +28,7 @@ namespace gestion_fomation_back_end_local.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetTrainingSessionById(int id)
         {
+            Console.WriteLine("GetTrainingSessionById : " + id);
             var trainingSession = await _trainingSessionRepository.GetTrainingSessionByIdAsync(id);
             if (trainingSession == null)
             {
@@ -34,7 +36,17 @@ namespace gestion_fomation_back_end_local.Controllers
             }
             return Ok(trainingSession);
         }
-
+        [HttpGet("trainingId/{trainingId}")]
+        public async Task<IActionResult> GetTrainingSessionByTrainingId(int trainingId)
+        {
+            Console.WriteLine("GetTrainingSessionByTrainingId : " + trainingId);
+            var trainingSession = await _trainingSessionRepository.GetAllTrainingSessionsByTrainingIdAsync(trainingId);
+            if (trainingSession == null)
+            {
+                return NotFound();
+            }
+            return Ok(trainingSession);
+        }
         // POST: api/TrainingSession
         [HttpPost]
         public async Task<IActionResult> CreateTrainingSession(TrainingSession trainingSession)

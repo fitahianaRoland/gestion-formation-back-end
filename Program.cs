@@ -27,6 +27,8 @@ builder.Services.AddControllers();
 // Ajouter DbContext et configurer la connexion à SQL Server
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<SageDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("SageConnection")));
 
 // Configuration du service JWT
 builder.Services.AddAuthentication(options =>
