@@ -19,7 +19,7 @@ namespace GestionFormation.Models.repository
             return await _context.session.ToListAsync() ?? new List<Session>();
         }
 
-        public async Task<Session> FindById(int id)
+        public async Task<Session?> FindById(int id)
         {
             return await _context.session.FindAsync(id);
         }

@@ -26,6 +26,36 @@ public class TrainingController : ControllerBase
         _sessionrepository = sessionRepository;
     }
 
+    [HttpPut("session/{id}")]
+    public async Task<IActionResult> UpdateSession(int id, Session session)
+    {
+        var updatedsession = await _sessionrepository.Update(id, session);
+        if (updatedsession == null)
+        {
+            return NotFound();
+        }
+        return Ok(updatedsession);
+    }
+
+    [HttpGet("session")]
+    public async Task<IActionResult> GetAllSession()
+    {
+        var session = await _sessionrepository.FindAll();
+        return Ok(session);
+    }
+
+    [HttpGet("session/{id}")]
+    public async Task<IActionResult> GetSessionById(int id)
+    {
+        var session = await _sessionrepository.FindById(id);
+        if (session == null)
+        {
+            return NotFound();
+        }
+        return Ok(session);
+    }
+
+
     [HttpPut("{id}")]
     public async Task<IActionResult> UpdateTraining(int id, Training training)
     {

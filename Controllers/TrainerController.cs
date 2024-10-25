@@ -15,7 +15,6 @@ public class TrainerController : ControllerBase
     private readonly TrainerTypeRepository _trainertypeRepository;
     private readonly TrainingRepository _trainingRepository;
     private readonly TrainingOrganizationRepository _trainingOrganizationRepository;
-    private readonly SessionRepository _sessionrepository;
 
     public TrainerController(
         ApplicationDbContext context,
@@ -35,7 +34,6 @@ public class TrainerController : ControllerBase
         _trainingOrganizationRepository = trainingOrganization;
         _trainertypeRepository = trainerType;
         _trainingRepository = training;
-        _sessionrepository = sessionRepository;
     }
 
     [HttpPost("newtrainer")]
