@@ -329,6 +329,48 @@
   },
   {
     "ContainingType": "TrainingController",
+    "Method": "GetAllSession",
+    "RelativePath": "api/Training/session",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrainingController",
+    "Method": "UpdateSession",
+    "RelativePath": "api/Training/session/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrainingController",
+    "Method": "GetSessionById",
+    "RelativePath": "api/Training/session/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrainingController",
     "Method": "GetTrainingsWithDepartments",
     "RelativePath": "api/Training/withDepartments",
     "HttpMethod": "GET",
