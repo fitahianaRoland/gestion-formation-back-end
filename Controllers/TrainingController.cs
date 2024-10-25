@@ -1,79 +1,158 @@
-﻿using gestion_fomation_back_end_local.Models.models;
-using gestion_fomation_back_end_local.Models.repository;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using GestionFormation.Models.repository;
+using Microsoft.AspNetCore.Authorization;
+using GestionFormation.Models.classes;
 
-namespace gestion_fomation_back_end_local.Controllers
+[Route("api/[controller]")]
+[ApiController]
+[Authorize]
+public class TrainingController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class TrainingController : ControllerBase
+    private readonly ILogger<HomeController> _logger;
+    private readonly ApplicationDbContext _context;
+    private readonly TrainingRepository _trainingRepository;
+    private readonly SessionRepository _sessionrepository;
+
+    public TrainingController(
+        ApplicationDbContext context,
+        ILogger<HomeController> logger,
+        TrainingRepository training,
+        SessionRepository sessionRepository
+     )
     {
-        private readonly TrainingRepository _trainingRepository;
+        _context = context;
+        _logger = logger;
+        _trainingRepository = training;
+        _sessionrepository = sessionRepository;
+    }
 
-        public TrainingController(TrainingRepository trainingRepository)
+    [HttpPut("session/{id}")]
+    public async Task<IActionResult> UpdateSession(int id, Session session)
+    {
+        var updatedsession = await _sessionrepository.Update(id, session);
+        if (updatedsession == null)
         {
-            _trainingRepository = trainingRepository;
+            return NotFound();
         }
+        return Ok(updatedsession);
+    }
 
-        // GET: api/Training
-        [HttpGet]
-        public async Task<IActionResult> GetAllTrainings()
+    [HttpGet("session")]
+    public async Task<IActionResult> GetAllSession()
+    {
+        var session = await _sessionrepository.FindAll();
+        return Ok(session);
+    }
+
+    [HttpGet("session/{id}")]
+    public async Task<IActionResult> GetSessionById(int id)
+    {
+        var session = await _sessionrepository.FindById(id);
+        if (session == null)
         {
-            var trainings = await _trainingRepository.GetAllTrainingsAsync();
-            return Ok(trainings);
+            return NotFound();
         }
+        return Ok(session);
+    }
 
-        // GET: api/Training/with-departments
-        [HttpGet("withDepartments")]
-        public async Task<IActionResult> GetTrainingsWithDepartments(int? departmentId = null)
+
+    [HttpPut("{id}")]
+    public async Task<IActionResult> UpdateTraining(int id, Training training)
+    {
+        var updatedTraining = await _trainingRepository.Update(id, training);
+        if (updatedTraining == null)
         {
-            var trainingsWithDepartments = await _trainingRepository.GetTrainingsWithDepartments(departmentId);
-            return Ok(trainingsWithDepartments);
+            return NotFound();
         }
+        return Ok(updatedTraining);
+    }
 
-
-        // GET: api/Training/id
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetTrainingById(int id)
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetTrainingById(int id)
+    {
+        var training = await _trainingRepository.FindById(id);
+        if (training == null)
         {
-            var training = await _trainingRepository.GetTrainingByIdAsync(id);
-            if (training == null)
+            return NotFound();
+        }
+        return Ok(training);
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetAllTrainings()
+    {
+        var trainings = await _trainingRepository.FindAll();
+        return Ok(trainings);
+    }
+
+    [HttpGet("withDepartments")]
+    public async Task<IActionResult> GetTrainingsWithDepartments(int? departmentId = null)
+    {
+        var trainingsWithDepartments = await _trainingRepository.GetTrainingsWithDepartments(departmentId);
+        return Ok(trainingsWithDepartments);
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteTraining(int id)
+    {
+        var deleted = await _trainingRepository.Delete(id);
+        if (!deleted)
+        {
+            return NotFound();
+        }
+        return NoContent();
+    }
+
+    [HttpPost("addFormation")]
+    public async Task<IActionResult> AddFormation(int departement, int trainertype, string theme, string objective, string place, string trainer, int min, int max, DateTime creation, List<Session> sessions)
+    {
+        var trainingva = new Training()
+        {
+            DepartementID = departement,
+            TrainerTypeID = trainertype,
+            Theme = theme,
+            Objective = objective,
+            Place = place,
+            TrainerName = trainer,
+            MinNbr = min,
+            MaxNbr = max,
+            Creation = creation.Date
+        };
+
+        try
+        {
+            if (min > max)
             {
-                return NotFound();
+                throw new Exception("Le nombre maximum ne doit pas être inférieur au minimum.");
             }
-            return Ok(training);
-        }
 
-        // POST: api/Training
-        [HttpPost]
-        public async Task<IActionResult> CreateTraining(Training training)
-        {
-            var createdTraining = await _trainingRepository.CreateTrainingAsync(training);
-            return CreatedAtAction(nameof(GetTrainingById), new { id = createdTraining.Id }, createdTraining);
-        }
+            await _trainingRepository.Add(trainingva);
 
-        // PUT: api/Training/id
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateTraining(int id, Training training)
-        {
-            var updatedTraining = await _trainingRepository.UpdateTrainingAsync(id, training);
-            if (updatedTraining == null)
+            int generatedId = trainingva.Id;
+
+
+            foreach (var sessionDto in sessions)
             {
-                return NotFound();
+                var sessioni = new Session()
+                {
+                    TrainingId = generatedId,
+                    StartDate = sessionDto.StartDate,
+                    EndDate = sessionDto.StartDate
+                };
+
+                await _sessionrepository.Add(sessioni);
             }
-            return Ok(updatedTraining);
+
+            return Ok(new
+            {
+                Training = trainingva,
+                Message = $"{sessions.Count} sessions have been added successfully."
+            });
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new { message = ex.Message });
         }
 
-        // DELETE: api/Training/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteTraining(int id)
-        {
-            var deleted = await _trainingRepository.DeleteTrainingAsync(id);
-            if (!deleted)
-            {
-                return NotFound();
-            }
-            return NoContent();
-        }
     }
 }

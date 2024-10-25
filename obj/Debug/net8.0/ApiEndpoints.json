@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "gestion_fomation_back_end_local.Controllers.AuthController",
+    "ContainingType": "AuthController",
     "Method": "Login",
     "RelativePath": "api/Auth/login",
     "HttpMethod": "POST",
@@ -8,195 +8,22 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "admin",
-        "Type": "gestion_fomation_back_end_local.Models.models.Administrateur",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "gestion_fomation_back_end_local.Controllers.DepartmentController",
-    "Method": "CreateDepartment",
-    "RelativePath": "api/Department",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "department",
-        "Type": "gestion_fomation_back_end_local.Models.models.Department",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "gestion_fomation_back_end_local.Controllers.DepartmentController",
-    "Method": "GetAllDepartments",
-    "RelativePath": "api/Department",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "gestion_fomation_back_end_local.Controllers.DepartmentController",
-    "Method": "GetDepartmentById",
-    "RelativePath": "api/Department/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "gestion_fomation_back_end_local.Controllers.DepartmentController",
-    "Method": "UpdateDepartment",
-    "RelativePath": "api/Department/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "updatedDepartment",
-        "Type": "gestion_fomation_back_end_local.Models.models.Department",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "gestion_fomation_back_end_local.Controllers.DepartmentController",
-    "Method": "DeleteDepartment",
-    "RelativePath": "api/Department/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "gestion_fomation_back_end_local.Controllers.EmployeeController",
-    "Method": "GetAllEmployees",
-    "RelativePath": "api/Employee",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "gestion_fomation_back_end_local.Controllers.EmployeeController",
-    "Method": "CreateEmployee",
-    "RelativePath": "api/Employee",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "gestion_fomation_back_end_local.Controllers.EmployeeController",
-    "Method": "GetEmployeeById",
-    "RelativePath": "api/Employee/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "gestion_fomation_back_end_local.Controllers.EmployeeController",
-    "Method": "UpdateEmployee",
-    "RelativePath": "api/Employee/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "gestion_fomation_back_end_local.Controllers.EmployeeController",
-    "Method": "DeleteEmployee",
-    "RelativePath": "api/Employee/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "gestion_fomation_back_end_local.Controllers.EmployeeController",
-    "Method": "GetEmployeesWithDepartments",
-    "RelativePath": "api/Employee/withDepartments",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "departmentId",
-        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "name",
+        "Name": "nom",
         "Type": "System.String",
         "IsRequired": false
       },
       {
-        "Name": "page",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "limit",
-        "Type": "System.Int32",
+        "Name": "password",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "gestion_fomation_back_end_local.Controllers.EmployeeSageController",
-    "Method": "GetAllEmployees",
-    "RelativePath": "api/EmployeeSage",
+    "ContainingType": "HomeController",
+    "Method": "GetAllDept",
+    "RelativePath": "api/Home/departement",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -204,9 +31,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "gestion_fomation_back_end_local.Controllers.EmployeeSageController",
-    "Method": "GetEmployeeById",
-    "RelativePath": "api/EmployeeSage/{id}",
+    "ContainingType": "HomeController",
+    "Method": "GetDepartmentById",
+    "RelativePath": "api/Home/departement/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -220,7 +47,169 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "gestion_fomation_back_end_local.Controllers.TrainingController",
+    "ContainingType": "HomeController",
+    "Method": "GetAllEmployees",
+    "RelativePath": "api/Home/employe",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HomeController",
+    "Method": "GetEmployeeById",
+    "RelativePath": "api/Home/employe/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HomeController",
+    "Method": "GetAllTrainerType",
+    "RelativePath": "api/Home/trainerType",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrainerController",
+    "Method": "DeleteTrainer",
+    "RelativePath": "api/Trainer/deleteTrainer",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrainerController",
+    "Method": "DeleteTraining",
+    "RelativePath": "api/Trainer/deleteTraining",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrainerController",
+    "Method": "CreateTrainer",
+    "RelativePath": "api/Trainer/newtrainer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "trainer",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrainerController",
+    "Method": "CreateTrainingOrganization",
+    "RelativePath": "api/Trainer/newtrainingOrganization",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "training",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrainerController",
+    "Method": "GetAllTrainer",
+    "RelativePath": "api/Trainer/trainer",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrainerController",
+    "Method": "GetAllTrainingOrganization",
+    "RelativePath": "api/Trainer/trainingOrganization",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrainerController",
+    "Method": "UpdateTrainer",
+    "RelativePath": "api/Trainer/updatetrainer/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "newName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrainerController",
+    "Method": "UpdateTrainingOrganization",
+    "RelativePath": "api/Trainer/updateTrainingOrganization/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "newName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrainingController",
     "Method": "GetAllTrainings",
     "RelativePath": "api/Training",
     "HttpMethod": "GET",
@@ -230,33 +219,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "gestion_fomation_back_end_local.Controllers.TrainingController",
-    "Method": "CreateTraining",
-    "RelativePath": "api/Training",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "gestion_fomation_back_end_local.Controllers.TrainingController",
-    "Method": "GetTrainingById",
-    "RelativePath": "api/Training/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "gestion_fomation_back_end_local.Controllers.TrainingController",
+    "ContainingType": "TrainingController",
     "Method": "UpdateTraining",
     "RelativePath": "api/Training/{id}",
     "HttpMethod": "PUT",
@@ -272,7 +235,23 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "gestion_fomation_back_end_local.Controllers.TrainingController",
+    "ContainingType": "TrainingController",
+    "Method": "GetTrainingById",
+    "RelativePath": "api/Training/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrainingController",
     "Method": "DeleteTraining",
     "RelativePath": "api/Training/{id}",
     "HttpMethod": "DELETE",
@@ -288,7 +267,110 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "gestion_fomation_back_end_local.Controllers.TrainingController",
+    "ContainingType": "TrainingController",
+    "Method": "AddFormation",
+    "RelativePath": "api/Training/addFormation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "departement",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "trainertype",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "theme",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "objective",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "place",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "trainer",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "min",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "max",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "creation",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "sessions",
+        "Type": "System.Collections.Generic.List\u00601[[GestionFormation.Models.classes.Session, GestionFormation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrainingController",
+    "Method": "GetAllSession",
+    "RelativePath": "api/Training/session",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrainingController",
+    "Method": "UpdateSession",
+    "RelativePath": "api/Training/session/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrainingController",
+    "Method": "GetSessionById",
+    "RelativePath": "api/Training/session/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrainingController",
     "Method": "GetTrainingsWithDepartments",
     "RelativePath": "api/Training/withDepartments",
     "HttpMethod": "GET",
@@ -304,87 +386,24 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "gestion_fomation_back_end_local.Controllers.TrainingSessionController",
-    "Method": "GetAllTrainingSessions",
-    "RelativePath": "api/TrainingSession",
+    "ContainingType": "GestionFormation.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "gestion_fomation_back_end_local.Controllers.TrainingSessionController",
-    "Method": "CreateTrainingSession",
-    "RelativePath": "api/TrainingSession",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "gestion_fomation_back_end_local.Controllers.TrainingSessionController",
-    "Method": "GetTrainingSessionById",
-    "RelativePath": "api/TrainingSession/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
+    "ReturnTypes": [
       {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[GestionFormation.WeatherForecast, GestionFormation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "gestion_fomation_back_end_local.Controllers.TrainingSessionController",
-    "Method": "UpdateTrainingSession",
-    "RelativePath": "api/TrainingSession/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "gestion_fomation_back_end_local.Controllers.TrainingSessionController",
-    "Method": "DeleteTrainingSession",
-    "RelativePath": "api/TrainingSession/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "gestion_fomation_back_end_local.Controllers.TrainingSessionController",
-    "Method": "GetTrainingSessionByTrainingId",
-    "RelativePath": "api/TrainingSession/trainingId/{trainingId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "trainingId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
+    "EndpointName": "GetWeatherForecast"
   }
 ]

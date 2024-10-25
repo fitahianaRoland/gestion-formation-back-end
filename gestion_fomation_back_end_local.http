@@ -1,6 +1,0 @@
-@gestion_fomation_back_end_local_HostAddress = http://localhost:5157
-
-GET {{gestion_fomation_back_end_local_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

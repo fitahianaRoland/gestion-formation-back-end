@@ -1,24 +1,56 @@
-﻿using Microsoft.EntityFrameworkCore;
-using gestion_fomation_back_end_local.Models.models;
+﻿using GestionFormation.Models.classes;
+using Microsoft.EntityFrameworkCore;
 
-namespace gestion_fomation_back_end_local.data
+public class ApplicationDbContext : DbContext
 {
-    public class ApplicationDbContext : DbContext
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        : base(options)
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-            : base(options)
-        {
-        }
-        public DbSet<Administrateur> administrateur { get; set; }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            base.OnModelCreating(modelBuilder);
-        }
-        public DbSet<Department> Department { get; set; } = default!;
-        public DbSet<Employee> Employee { get; set; } = default!;
-        public DbSet<Training> Training { get; set; } = default!;
-        public DbSet<TrainingSession> TrainingSession { get; set; } = default!;
+    }
 
-        // Déclarez vos DbSet ici. Par exemple, si vous avez une entité "Produit" ;
-    }   
+    public DbSet<Departement> Departements { get; set; }
+    public DbSet<Admin> Admins { get; set; }
+    public DbSet<Trainer> Trainers { get; set; } 
+    public DbSet<Training> trainings { get; set; }
+    public DbSet<Trainer_Type> trainer_Types { get; set; }
+    public DbSet<TrainingOrganization> trainingOrganizations { get; set; }
+    public DbSet<Session> session { get; set; }
+    public DbSet<Employee> employees { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+
+        modelBuilder.Entity<Departement>()
+            .Property(p => p.Id)
+            .HasDefaultValueSql($"NEXT VALUE FOR dept_seq");
+
+        modelBuilder.Entity<Admin>()
+          .Property(p => p.Id)
+          .ValueGeneratedOnAdd();
+
+        modelBuilder.Entity<Trainer>()
+          .Property(p => p.Id)
+          .ValueGeneratedOnAdd();
+
+        modelBuilder.Entity<TrainingOrganization>()
+           .Property(p => p.Id)
+           .ValueGeneratedOnAdd();
+
+        modelBuilder.Entity<Trainer_Type>()
+            .Property(p => p.Id)
+            .ValueGeneratedOnAdd();
+
+        modelBuilder.Entity<Training>()
+            .Property(p => p.Id)
+            .ValueGeneratedOnAdd();
+
+        modelBuilder.Entity<Session>()
+            .Property(p => p.Id)
+            .ValueGeneratedOnAdd();
+
+        modelBuilder.Entity<Employee>()
+            .Property(p => p.Employee_id)
+            .ValueGeneratedOnAdd();
+    }
 }

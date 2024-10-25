@@ -1,11 +1,8 @@
-using Microsoft.EntityFrameworkCore;
-using gestion_fomation_back_end_local.Models;
-using Microsoft.Extensions.DependencyInjection;
-using gestion_fomation_back_end_local.data;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using System.Text;
 using System.Reflection;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,29 +10,18 @@ var jwtKey = builder.Configuration["Jwt:Key"];
 var jwtIssuer = builder.Configuration["Jwt:Issuer"];
 var jwtAudience = builder.Configuration["Jwt:Audience"];
 
-builder.Logging.ClearProviders(); 
-builder.Logging.AddConsole();
-builder.Logging.AddDebug();
 
-if (string.IsNullOrEmpty(jwtKey) || string.IsNullOrEmpty(jwtIssuer) || string.IsNullOrEmpty(jwtAudience)){
+if (string.IsNullOrEmpty(jwtKey) || string.IsNullOrEmpty(jwtIssuer) || string.IsNullOrEmpty(jwtAudience))
+{
     throw new Exception("Les valeurs de configuration JWT sont manquantes.");
 }
 
-// Ajouter les services au conteneur.
-builder.Services.AddControllers();
-
-// Ajouter DbContext et configurer la connexion à SQL Server
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-builder.Services.AddDbContext<SageDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("SageConnection")));
-
-// Configuration du service JWT
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
 })
+
 .AddJwtBearer(options =>
 {
     options.TokenValidationParameters = new TokenValidationParameters
@@ -46,30 +32,65 @@ builder.Services.AddAuthentication(options =>
         ValidateIssuerSigningKey = true,
         ValidIssuer = jwtIssuer,
         ValidAudience = jwtAudience,
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey))
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey)),
+        ClockSkew = TimeSpan.Zero
+    };
+
+    options.Events = new JwtBearerEvents
+    {
+        OnAuthenticationFailed = context =>
+        {
+            // Log l'exception et la raison pour laquelle l'authentification échoue
+            Console.WriteLine("Authentication failed: " + context.Exception.Message);
+            return Task.CompletedTask;
+        },
+        OnTokenValidated = context =>
+        {
+            // Log si la validation du token a réussi
+            Console.WriteLine("Token validated successfully.");
+            return Task.CompletedTask;
+        }
     };
 });
 
-// Recuperer tous les types de classe non abstraits dans l'assembly
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend",
+        builder => builder.AllowAnyOrigin()
+                          .AllowAnyHeader()
+                          .AllowAnyMethod());
+});
+
+// Autres services comme avant
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Récupérer tous les types de classe non abstraits dans l'assembly
 var assembly = Assembly.GetExecutingAssembly();
 var serviceTypes = assembly.GetTypes()
     .Where(type => type.IsClass && !type.IsAbstract && !type.IsGenericTypeDefinition);
-foreach (var serviceType in serviceTypes){
+
+foreach (var serviceType in serviceTypes)
+{
     builder.Services.AddScoped(serviceType);
 }
 
 // Ajouter Swagger avec configuration pour JWT
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(c =>{
+builder.Services.AddSwaggerGen(c =>
+{
     c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "GestionFormation API", Version = "v1" });
+
     // Configuration pour le support du JWT dans Swagger
-    c.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme{
+    c.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme
+    {
         In = Microsoft.OpenApi.Models.ParameterLocation.Header,
         Description = "Veuillez entrer 'Bearer' suivi de l'espace et de votre token JWT",
         Name = "Authorization",
         Type = Microsoft.OpenApi.Models.SecuritySchemeType.ApiKey,
         Scheme = "Bearer"
     });
+
     c.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
     {
         {
@@ -86,7 +107,6 @@ builder.Services.AddSwaggerGen(c =>{
     });
 });
 
-
 builder.Services.AddControllersWithViews();
 builder.Services.AddSession(options =>
 {
@@ -96,39 +116,30 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 
-// Add services to the container.
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-// Ajouter la configuration CORS
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowAllOrigins",
-        builder =>
-        {
-            builder.AllowAnyOrigin()
-                   .AllowAnyMethod()
-                   .AllowAnyHeader();
-        });
-});
-
 var app = builder.Build();
 
-// Utiliser CORS
-app.UseCors("AllowAllOrigins");
-// Configure the HTTP request pipeline.
+// Configuration du pipeline HTTP
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-    app.UseDeveloperExceptionPage();
 }
 
 app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseSession();
 
-app.UseAuthorization();
+app.UseRouting();
+
+app.UseCors("AllowFrontend");
+
+// Ajouter l'authentification et l'autorisation avant les routes
+app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapControllers();
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
