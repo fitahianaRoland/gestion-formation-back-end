@@ -43,12 +43,12 @@ namespace GestionFormation.Models.repository
         public async Task<List<TrainingWithDepartment>> GetTrainingsWithDepartments(int? departmentId = null)
         {
             var query = from training in _context.trainings
-                        join department in _context.Departements on training.DepartementID equals department.Id
-                        where !departmentId.HasValue || training.DepartementID == departmentId.Value
+                        //join department in _context.Departements on training.DepartementID equals department.Id
+                        where !departmentId.HasValue /*|| training.DepartementID == departmentId.Value*/
                         select new TrainingWithDepartment
                         {
                             Id = training.Id,
-                            DepartmentId = training.DepartementID,
+                            //DepartmentId = training.DepartementID,
                             TrainerTypeId = training.TrainerTypeID,
                             Theme = training.Theme,
                             Objective = training.Objective,
@@ -57,7 +57,7 @@ namespace GestionFormation.Models.repository
                             MinNbr = training.MinNbr,
                             MaxNbr = training.MaxNbr,
                             CreationDate = training.Creation,
-                            DepartmentName = department.Nom
+                            //DepartmentName = department.Nom
                         };
             return await query.ToListAsync();
         }
@@ -72,7 +72,7 @@ namespace GestionFormation.Models.repository
             }
 
             // Mise à jour des propriétés
-            existingTraining.DepartementID = updatedTraining.DepartementID;
+            //existingTraining.DepartementID = updatedTraining.DepartementID;
             existingTraining.TrainerTypeID = updatedTraining.TrainerTypeID;
             existingTraining.Theme = updatedTraining.Theme;
             existingTraining.Objective = updatedTraining.Objective;
@@ -99,5 +99,9 @@ namespace GestionFormation.Models.repository
             await _context.SaveChangesAsync();
             return true;
         }
+
+
+
+
     }
 }

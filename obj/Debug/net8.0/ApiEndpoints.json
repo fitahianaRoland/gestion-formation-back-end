@@ -8,7 +8,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "nom",
+        "Name": "email",
         "Type": "System.String",
         "IsRequired": false
       },
@@ -23,7 +23,7 @@
   {
     "ContainingType": "HomeController",
     "Method": "GetAllDept",
-    "RelativePath": "api/Home/departement",
+    "RelativePath": "api/Home/department",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -33,7 +33,7 @@
   {
     "ContainingType": "HomeController",
     "Method": "GetDepartmentById",
-    "RelativePath": "api/Home/departement/{id}",
+    "RelativePath": "api/Home/department/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -68,6 +68,32 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HomeController",
+    "Method": "GetEmployeesLimited",
+    "RelativePath": "api/Home/GetEmployeesLimited",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "limit",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -329,6 +355,42 @@
   },
   {
     "ContainingType": "TrainingController",
+    "Method": "CreateTestMessage",
+    "RelativePath": "api/Training/send-email",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TrainingSessionId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ListOfEmployee",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FormValues",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "SendEmail",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrainingController",
     "Method": "GetAllSession",
     "RelativePath": "api/Training/session",
     "HttpMethod": "GET",
@@ -363,6 +425,22 @@
     "Parameters": [
       {
         "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrainingController",
+    "Method": "GetTrainingBySessionId",
+    "RelativePath": "api/Training/TrainingSession/{trainingId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "trainingId",
         "Type": "System.Int32",
         "IsRequired": true
       }

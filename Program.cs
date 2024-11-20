@@ -1,3 +1,6 @@
+using GestionFormation.Interfaces;
+using GestionFormation.Models.classes;
+using GestionFormation.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -63,7 +66,12 @@ builder.Services.AddCors(options =>
 
 // Autres services comme avant
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServerConnection")));
+
+// EmailConfiguration
+builder.Services.Configure<EmailConfiguration>(builder.Configuration.GetSection("EmailConfiguration"));
+
+builder.Services.AddControllers();
 
 // Récupérer tous les types de classe non abstraits dans l'assembly
 var assembly = Assembly.GetExecutingAssembly();
@@ -74,6 +82,7 @@ foreach (var serviceType in serviceTypes)
 {
     builder.Services.AddScoped(serviceType);
 }
+builder.Services.AddScoped(typeof(IEmailService), typeof(EmailService));
 
 // Ajouter Swagger avec configuration pour JWT
 builder.Services.AddEndpointsApiExplorer();
@@ -115,6 +124,7 @@ builder.Services.AddSession(options =>
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
+builder.Services.AddAuthorization();    
 
 var app = builder.Build();
 
@@ -136,7 +146,6 @@ app.UseCors("AllowFrontend");
 // Ajouter l'authentification et l'autorisation avant les routes
 app.UseAuthentication();
 app.UseAuthorization();
-
 
 app.MapControllerRoute(
     name: "default",

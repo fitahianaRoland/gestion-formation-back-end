@@ -2,28 +2,43 @@
 using GestionFormation.Models.repository;
 using Microsoft.AspNetCore.Authorization;
 using GestionFormation.Models.classes;
+using GestionFormation.Interfaces;
+using GestionFormation.Services;
+using Microsoft.AspNetCore.Routing.Template;
+using System.Net.Mail;
+using System.Net;
+using Newtonsoft.Json;
 
 [Route("api/[controller]")]
 [ApiController]
-[Authorize]
+[Authorize(Roles = "Administrator")]
 public class TrainingController : ControllerBase
 {
     private readonly ILogger<HomeController> _logger;
     private readonly ApplicationDbContext _context;
     private readonly TrainingRepository _trainingRepository;
     private readonly SessionRepository _sessionrepository;
+    private readonly IEmailService _emailService;
+    private readonly EmailTemplateService _emailTemplateService;
+    private readonly ForecastPresenceRepository _forecastPresenceRepository;
 
     public TrainingController(
         ApplicationDbContext context,
         ILogger<HomeController> logger,
         TrainingRepository training,
-        SessionRepository sessionRepository
+        SessionRepository sessionRepository,
+        IEmailService emailService,
+        EmailTemplateService emailTemplateService,
+        ForecastPresenceRepository forecastPresenceRepository
      )
     {
         _context = context;
         _logger = logger;
         _trainingRepository = training;
         _sessionrepository = sessionRepository;
+        _emailService = emailService;
+        _emailTemplateService = emailTemplateService;
+        _forecastPresenceRepository = forecastPresenceRepository;
     }
 
     [HttpPut("session/{id}")]
@@ -54,7 +69,16 @@ public class TrainingController : ControllerBase
         }
         return Ok(session);
     }
-
+    [HttpGet("TrainingSession/{trainingId}")]
+    public async Task<IActionResult> GetTrainingBySessionId(int trainingId)
+    {
+        var session = await _sessionrepository.GetTrainingBySessionId(trainingId);
+        if (session == null)
+        {
+            return NotFound();
+        }
+        return Ok(session);
+    }
 
     [HttpPut("{id}")]
     public async Task<IActionResult> UpdateTraining(int id, Training training)
@@ -108,7 +132,7 @@ public class TrainingController : ControllerBase
     {
         var trainingva = new Training()
         {
-            DepartementID = departement,
+            //DepartementID = departement,
             TrainerTypeID = trainertype,
             Theme = theme,
             Objective = objective,
@@ -155,4 +179,35 @@ public class TrainingController : ControllerBase
         }
 
     }
+
+    [HttpPost("send-email")]
+    public async Task<IActionResult> CreateTestMessage([FromForm] EmailRequest emailRequest)
+    {
+        bool isSendEmail = emailRequest.SendEmail;
+        IFormFile file = emailRequest.File;
+        Console.WriteLine($"ListOfEmployee: {emailRequest.ListOfEmployee}");
+        Console.WriteLine($"FormValues: {emailRequest.FormValues}");
+        Console.WriteLine($"SendEmail: {emailRequest.SendEmail}");
+        Console.WriteLine($"File: {emailRequest.File?.FileName}");
+        try
+        { 
+            // Envoi du message
+            if (isSendEmail == true)
+            {
+                //await _forecastPresenceRepository.AddForecast(emailRequest);
+                //await _emailService.SendEmailParticipatsAsync(emailRequest);
+                return Ok("Participants enregistré et Email envoyé avec succès !");
+            }
+            else {
+                //await _forecastPresenceRepository.AddForecast(emailRequest);
+                return Ok(" Participants enregistré ! "); 
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Exception caught in CreateTestMessage(): {0}", ex.ToString());
+            return BadRequest("Erreur: " + ex.Message);
+        }
+    }
+
 }

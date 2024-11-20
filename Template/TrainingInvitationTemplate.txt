@@ -1,0 +1,16 @@
+﻿Bonjour {EmployeeName},
+
+Dans le cadre de notre démarche de développement des compétences, nous avons le plaisir de vous convier à la formation intitulée "{TrainingTheme}", qui aura lieu :
+
+Date : {StartDate} 
+Heure : De {StartTime} à {EndTime}
+Lieu : {TrainingPlace}
+
+Objectif de la formation :
+{TrainingObjective}
+
+Pour toute question ou demande d'information complémentaire, n'hésitez pas à me contacter directement par email ou par téléphone au ContactPhone {ContactPhone}.
+Nous comptons sur votre participation active pour tirer le meilleur profit de cette formation.
+
+Cordialement!
+	

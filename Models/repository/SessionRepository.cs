@@ -23,7 +23,11 @@ namespace GestionFormation.Models.repository
         {
             return await _context.session.FindAsync(id);
         }
-
+        // GetTrainingBySessionId
+        public async Task<List<Session>?> GetTrainingBySessionId(int id)
+        {
+            return await _context.session.Where(e => e.TrainingId == id).ToListAsync();
+        }
         //create
         public async Task<Session> Add(Session trainingSession)
         {

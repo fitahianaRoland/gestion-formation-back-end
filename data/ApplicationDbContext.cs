@@ -16,6 +16,9 @@ public class ApplicationDbContext : DbContext
     public DbSet<TrainingOrganization> trainingOrganizations { get; set; }
     public DbSet<Session> session { get; set; }
     public DbSet<Employee> employees { get; set; }
+    public DbSet<UserRoleView> userRoleView { get; set; }
+    public DbSet<ForecastPresence> forecastPresence { get; set; }
+    public DbSet<AppUser> AppUser { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -23,9 +26,13 @@ public class ApplicationDbContext : DbContext
 
         modelBuilder.Entity<Departement>()
             .Property(p => p.Id)
-            .HasDefaultValueSql($"NEXT VALUE FOR dept_seq");
+            .ValueGeneratedOnAdd();
 
         modelBuilder.Entity<Admin>()
+          .Property(p => p.Id)
+          .ValueGeneratedOnAdd();
+
+        modelBuilder.Entity<AppUser>()
           .Property(p => p.Id)
           .ValueGeneratedOnAdd();
 
@@ -52,5 +59,12 @@ public class ApplicationDbContext : DbContext
         modelBuilder.Entity<Employee>()
             .Property(p => p.Employee_id)
             .ValueGeneratedOnAdd();
+
+        modelBuilder.Entity<ForecastPresence>()
+            .Property(p => p.Id)
+            .ValueGeneratedOnAdd();
+
+        modelBuilder.Entity<UserRoleView>()
+            .HasNoKey();
     }
 }

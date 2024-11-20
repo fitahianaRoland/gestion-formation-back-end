@@ -5,7 +5,7 @@ using GestionFormation.Models.classes;
 
 [Route("api/[controller]")]
 [ApiController]
-[Authorize] 
+//[Authorize] 
 public class HomeController : ControllerBase
 {
     private readonly ILogger<HomeController> _logger;
@@ -36,6 +36,17 @@ public class HomeController : ControllerBase
         return Ok(employees);
     }
 
+    [HttpGet("GetEmployeesLimited")]
+    public async Task<IActionResult> GetEmployeesLimited(string name = null, int page = 1, int limit = 10)
+    {
+        var (employeesWithDepartments, totalEmployees) = await _employeeRepository.GetEmployeesLimited(name,page,limit);
+        return Ok(new
+        {
+            Total = totalEmployees,
+            Employees = employeesWithDepartments
+        });
+    }
+
     [HttpGet("employe/{id}")]
     public async Task<IActionResult> GetEmployeeById(int id)
     {
@@ -54,14 +65,14 @@ public class HomeController : ControllerBase
         return Ok(ttype);
     }
 
-    [HttpGet("departement")]
+    [HttpGet("department")]
     public async Task<IActionResult> GetAllDept()
     {
         var dept = await _departementRepository.FindAll();
         return Ok(dept);
     }
 
-    [HttpGet("departement/{id}")]
+    [HttpGet("department/{id}")]
     public async Task<IActionResult> GetDepartmentById(int id)
     {
         var department = await _departementRepository.FindById(id);
