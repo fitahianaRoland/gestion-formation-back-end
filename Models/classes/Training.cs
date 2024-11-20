@@ -10,8 +10,8 @@ namespace GestionFormation.Models.classes
         [Column("id")]
         public int Id { get; set; }
 
-        [Column("department_id")]
-        public int DepartementID { get; set; }
+        //[Column("department_id")]
+        //public int DepartementID { get; set; }
 
         [Column("trainer_type_id")]
         public int TrainerTypeID { get; set; }
@@ -34,7 +34,7 @@ namespace GestionFormation.Models.classes
         [Column("max_nbr")]
         public int MaxNbr { get; set; }
 
-        [Column("creaction_date")]
+        [Column("creation_date")]
         public DateTime Creation { get; set; }
     }
 }

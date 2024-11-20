@@ -4,22 +4,25 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System.Security.Claims;
 using System.IdentityModel.Tokens.Jwt;
+using GestionFormation.Models.classes;
 
 [Route("api/[controller]")]
 [ApiController]
 public class AuthController : ControllerBase
 {
-    private readonly AdminRepository _adminRepository;
+    private readonly AppUserRepository _appuser;
+    private readonly UserRoleRepository _userRoleRepository;
 
-    public AuthController(AdminRepository admn)
+    public AuthController(AppUserRepository appuser, UserRoleRepository userRoleRepository)
     {
-        _adminRepository = admn;
+        _appuser = appuser;
+        _userRoleRepository = userRoleRepository;
     }
 
     [HttpPost("login")]
-    public IActionResult Login(string nom, string password)
+    public IActionResult Login(string email, string password)
     {
-        var adminId = _adminRepository.Authenticate(nom, password);
+        var adminId = _appuser.Authenticate(email, password);
 
         if (adminId == null)
         {
@@ -29,17 +32,22 @@ public class AuthController : ControllerBase
         var token = GenerateJwtToken(adminId);
         return Ok(new { Token = token });
     }
-        
-    private string GenerateJwtToken(int? adminId)
+
+    private async Task<string> GenerateJwtToken(int? adminId)
     {
         var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("CeciEstUneCléSuperSécurisée1234!"));
         var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
-        var claims = new[]
+        var claims = new List<Claim>
         {
             new Claim(JwtRegisteredClaimNames.Sub,adminId.ToString()), 
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
         };
+        List<UserRoleView> roles = await _userRoleRepository.GetUserRolesByUserId(adminId);
+        foreach (var role in roles)
+        {
+            claims.Add(new Claim(ClaimTypes.Role, role.RoleDescription));
+        }
 
         var token = new JwtSecurityToken(
             issuer: "http://localhost:3002",

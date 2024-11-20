@@ -3,13 +3,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GestionFormation.Models.classes
 {
-    [Table("Department")]
+    [Table("department")]
     public class Departement
     {
         [Key]
-        [Column("Department_id")]
+        [Column("id")]
         public int Id { get; set; }
-        [Column("Department_name")]
+        [Column("description")]
         public string? Nom { get; set; }
     }
 }
