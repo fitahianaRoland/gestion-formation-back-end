@@ -54,12 +54,6 @@ public class AuthController : ControllerBase
             new Claim(JwtRegisteredClaimNames.Sub,adminId.ToString()), 
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
         };
-
-        //List<UserRoleView> roles = await _userRoleRepository.GetUserRolesByUserId(adminId);
-        //foreach (var role in roles)
-        //{
-        //    claims.Add(new Claim(ClaimTypes.Role, role.RoleDescription));
-        //}
         AppUser user = await _appuser.GetUserById(adminId);
         ViewRoleProfile role = await _adminRepository.GetRoleByProfileId(user.ProfileId);
         List<ViewAccessProfile> accesses = await _adminRepository.GetAccessByProfileId(user.ProfileId);
