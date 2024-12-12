@@ -10,8 +10,8 @@ namespace GestionFormation.Models.classes
         [Column("id")]
         public int Id { get; set; }
 
-        //[Column("department_id")]
-        //public int DepartementID { get; set; }
+        [Column("department_id")]
+        public int DepartementID { get; set; }
 
         [Column("trainer_type_id")]
         public int TrainerTypeID { get; set; }
@@ -25,9 +25,6 @@ namespace GestionFormation.Models.classes
         [Column("place")]
         public string? Place { get; set; }
 
-        [Column("trainer_name")]
-        public string? TrainerName { get; set; }
-
         [Column("min_nbr")]
         public int MinNbr { get; set; }
 
@@ -36,5 +33,8 @@ namespace GestionFormation.Models.classes
 
         [Column("creation_date")]
         public DateTime Creation { get; set; }
+
+        [Column("validation_id")]
+        public int Validation { get; set; }
     }
 }
