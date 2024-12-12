@@ -59,8 +59,9 @@ builder.Services.AddAuthentication(options =>
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend",
-        builder => builder.AllowAnyOrigin()
+        builder => builder.WithOrigins("http://localhost:3000")
                           .AllowAnyHeader()
+                          .AllowCredentials()
                           .AllowAnyMethod());
 });
 
@@ -124,7 +125,25 @@ builder.Services.AddSession(options =>
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
-builder.Services.AddAuthorization();    
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("AdminPolicy", policy =>
+        policy.RequireRole("Admin"));
+    options.AddPolicy("CanRead", policy =>
+        policy.RequireAssertion(context =>
+            context.User.HasClaim(c => c.Type == "Access" && c.Value == "Lire")));
+    options.AddPolicy("CanWrite", policy =>
+        policy.RequireAssertion(context =>
+            context.User.HasClaim(c => c.Type == "Access" && c.Value == "Ecrire"))); 
+    options.AddPolicy("CanUpdate", policy =>
+        policy.RequireAssertion(context =>
+            context.User.HasClaim(c => c.Type == "Access" && c.Value == "Modifier")));
+    options.AddPolicy("CanUpdate", policy =>
+        policy.RequireAssertion(context =>
+            context.User.HasClaim(c => c.Type == "Access" && c.Value == "Supprimer")));
+});
+
 
 var app = builder.Build();
 

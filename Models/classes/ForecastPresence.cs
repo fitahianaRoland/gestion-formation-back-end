@@ -9,6 +9,9 @@ namespace GestionFormation.Models.classes
         [Column("id")]
         public int Id { get; set; }
 
+        [Column("training_id")]
+        public int TrainingId { get; set; }
+
         [Column("training_session_id")]
         public int TrainingSessionId { get; set; }
 
