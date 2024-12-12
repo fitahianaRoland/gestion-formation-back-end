@@ -1,5 +1,4 @@
 ﻿using GestionFormation.Models.classes;
-using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
 namespace GestionFormation.Models.repository
@@ -20,9 +19,14 @@ namespace GestionFormation.Models.repository
             return await _context.trainings.ToListAsync() ?? new List<Training>();
         }
 
-        public async Task<Training> FindById(int id)
+        public async Task<Training?> FindById(int id)
         {
-            return await _context.trainings.FindAsync(id) ?? new Training();
+            return await _context.trainings.FindAsync(id);
+        }
+
+        public async Task<List<Training>> FindByState(int state)
+        {
+            return await _context.trainings.Where(t => t.Validation == state).ToListAsync();
         }
 
         //create
@@ -44,23 +48,36 @@ namespace GestionFormation.Models.repository
         public async Task<List<TrainingWithDepartment>> GetTrainingsWithDepartments(int? departmentId = null)
         {
             var query = from training in _context.trainings
-                        //join department in _context.Departements on training.DepartementID equals department.Id
-                        where !departmentId.HasValue /*|| training.DepartementID == departmentId.Value*/
+                        join department in _context.Departements on training.DepartementID equals department.Id
+                        where !departmentId.HasValue || training.DepartementID == departmentId.Value
                         select new TrainingWithDepartment
                         {
                             Id = training.Id,
-                            //DepartmentId = training.DepartementID,
+                            DepartmentId = training.DepartementID,
                             TrainerTypeId = training.TrainerTypeID,
                             Theme = training.Theme,
                             Objective = training.Objective,
                             Place = training.Place,
-                            TrainerName = training.TrainerName,
                             MinNbr = training.MinNbr,
                             MaxNbr = training.MaxNbr,
                             CreationDate = training.Creation,
-                            //DepartmentName = department.Nom
+                            DepartmentName = department.Nom
                         };
             return await query.ToListAsync();
+        }
+
+        public async Task<Training?> UpdateState(int id, int state)
+        {
+            var existingTraining = await FindById(id);
+            if (existingTraining == null)
+            {
+                return null;
+            }
+
+            existingTraining.Validation = state;
+
+            await _context.SaveChangesAsync();
+            return existingTraining;
         }
 
         //niova ny nomanle fonction any
@@ -73,12 +90,11 @@ namespace GestionFormation.Models.repository
             }
 
             // Mise à jour des propriétés
-            //existingTraining.DepartementID = updatedTraining.DepartementID;
+            existingTraining.DepartementID = updatedTraining.DepartementID;
             existingTraining.TrainerTypeID = updatedTraining.TrainerTypeID;
             existingTraining.Theme = updatedTraining.Theme;
             existingTraining.Objective = updatedTraining.Objective;
             existingTraining.Place = updatedTraining.Place;
-            existingTraining.TrainerName = updatedTraining.TrainerName;
             existingTraining.MinNbr = updatedTraining.MinNbr;
             existingTraining.MaxNbr = updatedTraining.MaxNbr;
             existingTraining.Creation = updatedTraining.Creation;
@@ -99,69 +115,6 @@ namespace GestionFormation.Models.repository
             _context.trainings.Remove(training);
             await _context.SaveChangesAsync();
             return true;
-        }
-
-        public async Task InsertTrainingSessionPlannedStatus(int trainingId, int trainingSessionId, int trainingSessionStatusId)
-        {
-            const string SQL = "INSERT INTO training_session_planned_status (training_id, training_session_id, training_session_status_id) VALUES (@TrainingId, @TrainingSessionId, @TrainingSessionStatusId);";
-            try
-            {
-                var parameters = new[]
-                {
-                    new SqlParameter("@TrainingId", trainingId),
-                    new SqlParameter("@TrainingSessionId", trainingSessionId),
-                    new SqlParameter("@TrainingSessionStatusId", trainingSessionStatusId)
-                };
-                await _context.Database.ExecuteSqlRawAsync(SQL, parameters);
-                Console.WriteLine("Successfully inserted a new TrainingSessionPlannedStatus.");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error inserting TrainingSessionPlannedStatus."+ex.Message);
-                throw;
-            }
-        }
-        public async Task InsertTrainingSessionCompletedStatus(int trainingId, int trainingSessionId, int trainingSessionStatusId)
-        {
-            const string SQL = "INSERT INTO training_session_completed_status (training_id, training_session_id, training_session_status_id) VALUES (@TrainingId, @TrainingSessionId, @TrainingSessionStatusId);";
-
-            try
-            {
-                var parameters = new[]
-                {
-                    new SqlParameter("@TrainingId", trainingId),
-                    new SqlParameter("@TrainingSessionId", trainingSessionId),
-                    new SqlParameter("@TrainingSessionStatusId", trainingSessionStatusId)
-                };
-                await _context.Database.ExecuteSqlRawAsync(SQL, parameters);
-                Console.WriteLine("Successfully inserted a new TrainingSessionCompletedStatus.");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error inserting TrainingSessionCompletedStatus." + ex.Message);
-                throw;
-            }
-        }
-
-        public async Task<List<ViewTrainingPlannedStatus>> GetViewTrainingPlannedStatus()
-        {
-            return await _context.viewTrainingPlannedStatus.ToListAsync();
-        }
-
-        public async Task<List<ViewTrainingCompletedStatus>> GetViewTrainingCompletedStatus()
-        {
-            return await _context.viewTrainingCompletedStatuses.ToListAsync();
-        }
-
-
-        public async Task<List<ViewTrainingSessionPlannedStatus>> GetViewTrainingSessionPlannedStatus(int training_id)
-        {
-            return await _context.viewTrainingSessionPlannedStatuses.Where(e => e.TrainingId == training_id ).ToListAsync();
-        }
-
-        public async Task<List<ViewTrainingSessionCompletedStatus>> GetViewTrainingSessionCompletedStatus(int training_id)
-        {
-            return await _context.viewTrainingSessionCompletedStatuses.Where(e => e.TrainingId == training_id).ToListAsync();
         }
     }
 }
