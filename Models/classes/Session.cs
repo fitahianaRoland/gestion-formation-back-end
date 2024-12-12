@@ -14,13 +14,10 @@ namespace GestionFormation.Models.classes
         [Column("training_id")]
         public int TrainingId { get; set; }
 
-        [Column("start_datetime")]
+        [Column("start_date")]
         public DateTime StartDate { get; set; }
 
-        [Column("end_datetime")]
+        [Column("end_date")]
         public DateTime EndDate { get; set; }
-
-        [Column("validation_id")]
-        public int Validation { get; set; }
     }
 }

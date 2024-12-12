@@ -3276,19 +3276,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Rmira\\.nuget\\packages\\": {}
+    "C:\\Users\\ranai\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GF\\gitFront\\gestion-formation-back-end\\GestionFormation.csproj",
+      "projectUniqueName": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\GestionFormation.csproj",
       "projectName": "GestionFormation",
-      "projectPath": "D:\\GF\\gitFront\\gestion-formation-back-end\\GestionFormation.csproj",
-      "packagesPath": "C:\\Users\\Rmira\\.nuget\\packages\\",
-      "outputPath": "D:\\GF\\gitFront\\gestion-formation-back-end\\obj\\",
+      "projectPath": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\GestionFormation.csproj",
+      "packagesPath": "C:\\Users\\ranai\\.nuget\\packages\\",
+      "outputPath": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Rmira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ranai\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
