@@ -1,4 +1,5 @@
 ﻿using GestionFormation.Models.classes;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
 namespace GestionFormation.Models.repository
@@ -21,7 +22,7 @@ namespace GestionFormation.Models.repository
 
         public async Task<Training> FindById(int id)
         {
-            return await _context.trainings.FindAsync(id);
+            return await _context.trainings.FindAsync(id) ?? new Training();
         }
 
         //create
@@ -100,8 +101,67 @@ namespace GestionFormation.Models.repository
             return true;
         }
 
+        public async Task InsertTrainingSessionPlannedStatus(int trainingId, int trainingSessionId, int trainingSessionStatusId)
+        {
+            const string SQL = "INSERT INTO training_session_planned_status (training_id, training_session_id, training_session_status_id) VALUES (@TrainingId, @TrainingSessionId, @TrainingSessionStatusId);";
+            try
+            {
+                var parameters = new[]
+                {
+                    new SqlParameter("@TrainingId", trainingId),
+                    new SqlParameter("@TrainingSessionId", trainingSessionId),
+                    new SqlParameter("@TrainingSessionStatusId", trainingSessionStatusId)
+                };
+                await _context.Database.ExecuteSqlRawAsync(SQL, parameters);
+                Console.WriteLine("Successfully inserted a new TrainingSessionPlannedStatus.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error inserting TrainingSessionPlannedStatus."+ex.Message);
+                throw;
+            }
+        }
+        public async Task InsertTrainingSessionCompletedStatus(int trainingId, int trainingSessionId, int trainingSessionStatusId)
+        {
+            const string SQL = "INSERT INTO training_session_completed_status (training_id, training_session_id, training_session_status_id) VALUES (@TrainingId, @TrainingSessionId, @TrainingSessionStatusId);";
+
+            try
+            {
+                var parameters = new[]
+                {
+                    new SqlParameter("@TrainingId", trainingId),
+                    new SqlParameter("@TrainingSessionId", trainingSessionId),
+                    new SqlParameter("@TrainingSessionStatusId", trainingSessionStatusId)
+                };
+                await _context.Database.ExecuteSqlRawAsync(SQL, parameters);
+                Console.WriteLine("Successfully inserted a new TrainingSessionCompletedStatus.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error inserting TrainingSessionCompletedStatus." + ex.Message);
+                throw;
+            }
+        }
+
+        public async Task<List<ViewTrainingPlannedStatus>> GetViewTrainingPlannedStatus()
+        {
+            return await _context.viewTrainingPlannedStatus.ToListAsync();
+        }
+
+        public async Task<List<ViewTrainingCompletedStatus>> GetViewTrainingCompletedStatus()
+        {
+            return await _context.viewTrainingCompletedStatuses.ToListAsync();
+        }
 
 
+        public async Task<List<ViewTrainingSessionPlannedStatus>> GetViewTrainingSessionPlannedStatus(int training_id)
+        {
+            return await _context.viewTrainingSessionPlannedStatuses.Where(e => e.TrainingId == training_id ).ToListAsync();
+        }
 
+        public async Task<List<ViewTrainingSessionCompletedStatus>> GetViewTrainingSessionCompletedStatus(int training_id)
+        {
+            return await _context.viewTrainingSessionCompletedStatuses.Where(e => e.TrainingId == training_id).ToListAsync();
+        }
     }
 }

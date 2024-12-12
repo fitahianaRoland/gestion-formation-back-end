@@ -36,7 +36,7 @@ namespace GestionFormation.Models.repository
                 }
 
             // Calculer le total d'employés correspondant aux critères 
-            var totalEmployees = await query.CountAsync();
+                var totalEmployees = await query.CountAsync();
 
                 // Appliquer la pagination seulement si 'name' est null ou vide
                 List<Employee> employees;
@@ -48,8 +48,8 @@ namespace GestionFormation.Models.repository
                 {
                     employees = await query.ToListAsync();
                 }
-            return (employees, totalEmployees);
-        }
+                return (employees, totalEmployees);
+            }
 
 
     }

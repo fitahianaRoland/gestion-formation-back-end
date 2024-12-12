@@ -1,4 +1,5 @@
 ﻿using GestionFormation.Models.classes;
+using GestionFormation.Models.Classes;
 using Microsoft.EntityFrameworkCore;
 
 public class ApplicationDbContext : DbContext
@@ -19,6 +20,33 @@ public class ApplicationDbContext : DbContext
     public DbSet<UserRoleView> userRoleView { get; set; }
     public DbSet<ForecastPresence> forecastPresence { get; set; }
     public DbSet<AppUser> AppUser { get; set; }
+    public DbSet<TrainingEvaluationType> TrainingEvaluationTypes { get; set; }
+    public DbSet<ViewTrainingEvaluationStatus> viewTrainingEvaluationStatus { get; set; }
+    public DbSet<ViewTrainingSessionEvaluationStatus> viewTrainingSessionEvaluationStatus { get; set; }
+    public DbSet<ItemTrainingEvaluation> itemTrainingEvaluation { get; set; }
+    public DbSet<TrainingEvaluation> trainingEvaluation { get; set; }
+    public DbSet<TrainingEvaluationScore> trainingEvaluationScore { get; set; }
+    public DbSet<TrainingEvaluationStatus> trainingEvaluationStatus { get; set; }
+    public DbSet<SendingStatus> sendingStatus { get; set; }
+    public DbSet<EvaluationToken> evaluationToken { get; set; }
+    public DbSet<Profile> profiles { get; set; }
+    public DbSet<RoleProfile> roleProfiles { get; set; }
+    public DbSet<Access> accesses { get; set; }
+    public DbSet<AccessProfile> accessProfiles { get; set; }
+    public DbSet<ViewAccessProfile> viewAccessProfiles { get; set; }
+    public DbSet<ViewRoleProfile> viewRoleProfiles { get; set; }
+    public DbSet<Role> roles { get; set; }
+    public DbSet<ViewTrainingEvaluationAverageScore> viewTrainingEvaluationAverageScores { get; set; }
+    public DbSet<ViewTrainingEvaluationGeneralAverageScore> viewTrainingEvaluationGeneralAverageScores { get; set; }
+    public DbSet<ViewTrainingEvaluationResponseCount> viewTrainingEvaluationResponseCounts { get; set; }
+    public DbSet<ViewTrainingPlannedStatus> viewTrainingPlannedStatus { get; set; }
+    public DbSet<ViewTrainingSessionPlannedStatus> viewTrainingSessionPlannedStatuses { get; set; }
+    public DbSet<ViewTrainingCompletedStatus> viewTrainingCompletedStatuses { get; set; }
+
+    public DbSet<ViewTrainingSessionCompletedStatus> viewTrainingSessionCompletedStatuses { get; set; }
+    public DbSet<TrainingSessionStatus> trainingSessionStatus { get; set; }
+
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -64,7 +92,63 @@ public class ApplicationDbContext : DbContext
             .Property(p => p.Id)
             .ValueGeneratedOnAdd();
 
+        modelBuilder.Entity<TrainingEvaluationType>()
+            .Property(p => p.Id)
+            .ValueGeneratedOnAdd();
+            
         modelBuilder.Entity<UserRoleView>()
+            .HasNoKey();
+
+        modelBuilder.Entity<ViewTrainingEvaluationStatus>()
+            .HasNoKey();
+        modelBuilder.Entity<ViewTrainingSessionEvaluationStatus>()
+            .HasNoKey();
+        modelBuilder.Entity<ItemTrainingEvaluation>()
+           .Property(p => p.Id)
+           .ValueGeneratedOnAdd();
+        modelBuilder.Entity<TrainingEvaluation>()
+           .Property(p => p.Id)
+           .ValueGeneratedOnAdd();
+        modelBuilder.Entity<TrainingEvaluationScore>()
+            .Property(p => p.Id)
+            .ValueGeneratedOnAdd();
+        modelBuilder.Entity<SendingStatus>()
+            .Property(p => p.Id)
+            .ValueGeneratedOnAdd();
+        modelBuilder.Entity<Profile>()
+            .Property(p => p.Id)
+            .ValueGeneratedOnAdd();
+        modelBuilder.Entity<RoleProfile>()
+            .Property(p => p.Id)
+            .ValueGeneratedOnAdd();
+        modelBuilder.Entity<Access>()
+            .Property(p => p.Id)
+            .ValueGeneratedOnAdd();
+        modelBuilder.Entity<AccessProfile>()
+            .Property(p => p.Id)
+            .ValueGeneratedOnAdd();
+        modelBuilder.Entity<Role>()
+            .Property(p => p.Id)
+            .ValueGeneratedOnAdd();
+        modelBuilder.Entity<ViewAccessProfile>()
+            .HasNoKey();
+        modelBuilder.Entity<ViewRoleProfile>()
+            .HasNoKey();
+        modelBuilder.Entity<ViewTrainingEvaluationAverageScore>()
+            .HasNoKey();
+        modelBuilder.Entity<ViewTrainingEvaluationGeneralAverageScore>()
+            .HasNoKey();
+        modelBuilder.Entity<ViewTrainingEvaluationResponseCount>()
+            .HasNoKey();
+        modelBuilder.Entity<ViewTrainingPlannedStatus>()
+            .HasNoKey();
+        modelBuilder.Entity<ViewTrainingSessionPlannedStatus>()
+            .HasNoKey();
+        modelBuilder.Entity<ViewTrainingCompletedStatus>()
+            .HasNoKey();
+        modelBuilder.Entity<ViewTrainingSessionCompletedStatus>()
+            .HasNoKey();
+        modelBuilder.Entity<TrainingSessionStatus>()
             .HasNoKey();
     }
 }

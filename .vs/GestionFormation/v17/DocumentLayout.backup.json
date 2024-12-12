@@ -11,140 +11,316 @@
       "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\interfaces\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:interfaces\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\employerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\employerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\services\\generatejwttokenforlink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:services\\generatejwttokenforlink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\participants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\participants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\emailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\emailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\controllers\\trainingevaluationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:controllers\\trainingevaluationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\interfaces\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:interfaces\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\forecastpresencerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\forecastpresencerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\forecastpresence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\forecastpresence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\training.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\training.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\trainingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\trainingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\controllers\\anthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:controllers\\anthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\userrolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\userrolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\trainerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\trainerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\appuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\appuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\departement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\departement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\adminrepositorycs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\adminrepositorycs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\userroleview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\userroleview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\gestionformation.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:gestionformation.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\forecastpresence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\forecastpresence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\forecastvalues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\forecastvalues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\sendingstatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\sendingstatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\trainingevaluationstatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\trainingevaluationstatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\jsonmodelbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\jsonmodelbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\trainingsessionstatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\trainingsessionstatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\services\\customjsonconverters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:services\\customjsonconverters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\trainingsessionstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\trainingsessionstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\presencerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\presencerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\emailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\emailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\sendingstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\sendingstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\controllers\\trainercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:controllers\\trainercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\trainingwithdepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\trainingwithdepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\viewtrainingsessioncompletedstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\viewtrainingsessioncompletedstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\services\\emailtemplateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:services\\emailtemplateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\forecastvalues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\forecastvalues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\viewtrainingcompletedstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\viewtrainingcompletedstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\itemtrainingevaluation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\itemtrainingevaluation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\trainingevaluationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\trainingevaluationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\viewtrainingevaluationstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\viewtrainingevaluationstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\viewtrainingevaluationstatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\viewtrainingevaluationstatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\trainingevaluation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\trainingevaluation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\controllers\\anthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:controllers\\anthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\appuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\appuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\adminrepositorycs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\adminrepositorycs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\employerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\employerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\viewtrainingevaluationaveragescore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\viewtrainingevaluationaveragescore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\viewtrainingsessionevaluationstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\viewtrainingsessionevaluationstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\itemtrainingevaluationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\itemtrainingevaluationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\viewtrainingsessionevaluationstatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\viewtrainingsessionevaluationstatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\viewtrainingevaluationresponsecount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\viewtrainingevaluationresponsecount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\viewtrainingevaluationgeneralaveragescore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\viewtrainingevaluationgeneralaveragescore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\access.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\access.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\trainingevaluationscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\trainingevaluationscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\trainingevaluationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\trainingevaluationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\sendscoreevaluationparam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\sendscoreevaluationparam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\viewaccessprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\viewaccessprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\accessprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\accessprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\profilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\profilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\roleprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\roleprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\trainerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\trainerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\userrolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\userrolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\viewroleprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\viewroleprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\sendmailevaluationparam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\sendmailevaluationparam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\jsonmodelbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\jsonmodelbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\evaluationtokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\evaluationtokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\evaluationtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\evaluationtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\gestionformation.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:gestionformation.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\template\\traininginvitationtemplate.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:template\\traininginvitationtemplate.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\emailconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\emailconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\employe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\employe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\services\\commentsanitizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:services\\commentsanitizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\trainingorganizationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\trainingorganizationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\services\\customjsonconverters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:services\\customjsonconverters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\trainingevaluationstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\trainingevaluationstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\trainingevaluationtyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\trainingevaluationtyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\trainingevaluationscorerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\trainingevaluationscorerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\services\\emailtemplateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:services\\emailtemplateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\training.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\training.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\trainertyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\trainertyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\trainingwithdepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\trainingwithdepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\sessionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\sessionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\departement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\departement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\departementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\departementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\userroleview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\userroleview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\emailconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\emailconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\template\\traininginvitationtemplate.txt||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -155,30 +331,22 @@
       "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:gestionformation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\viewtrainingsessionplannedstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\viewtrainingsessionplannedstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\sessionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\sessionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\trainingorganizationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\trainingorganizationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\repository\\departementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\repository\\departementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|d:\\fianarana\\stage\\projetstage\\gestion-formation-back-end\\models\\classes\\viewtrainingplannedstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E71451C-6768-4C2C-8588-CAA7E9A6F12F}|GestionFormation.csproj|solutionrelative:models\\classes\\viewtrainingplannedstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 209,
+      "VerticalTabListWidth": 184,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 36,
+          "SelectedChildIndex": 78,
           "Children": [
             {
               "$type": "Bookmark",
@@ -199,90 +367,594 @@
             {
               "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "TrainingSessionStatusRepository.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\TrainingSessionStatusRepository.cs",
+              "RelativeDocumentMoniker": "Models\\repository\\TrainingSessionStatusRepository.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\TrainingSessionStatusRepository.cs",
+              "RelativeToolTip": "Models\\repository\\TrainingSessionStatusRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T12:20:41.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TrainingSessionStatus.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\TrainingSessionStatus.cs",
+              "RelativeDocumentMoniker": "Models\\classes\\TrainingSessionStatus.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\TrainingSessionStatus.cs",
+              "RelativeToolTip": "Models\\classes\\TrainingSessionStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T12:19:10.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ViewTrainingSessionCompletedStatus.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\ViewTrainingSessionCompletedStatus.cs",
+              "RelativeDocumentMoniker": "Models\\classes\\ViewTrainingSessionCompletedStatus.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\ViewTrainingSessionCompletedStatus.cs",
+              "RelativeToolTip": "Models\\classes\\ViewTrainingSessionCompletedStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T07:48:09.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ViewTrainingCompletedStatus.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\ViewTrainingCompletedStatus.cs",
+              "RelativeDocumentMoniker": "Models\\classes\\ViewTrainingCompletedStatus.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\ViewTrainingCompletedStatus.cs",
+              "RelativeToolTip": "Models\\classes\\ViewTrainingCompletedStatus.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAADwvzYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:50:41.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "ViewTrainingSessionPlannedStatus.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\ViewTrainingSessionPlannedStatus.cs",
+              "RelativeDocumentMoniker": "Models\\classes\\ViewTrainingSessionPlannedStatus.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\ViewTrainingSessionPlannedStatus.cs",
+              "RelativeToolTip": "Models\\classes\\ViewTrainingSessionPlannedStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:40:24.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "ViewTrainingPlannedStatus.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\ViewTrainingPlannedStatus.cs",
+              "RelativeDocumentMoniker": "Models\\classes\\ViewTrainingPlannedStatus.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\ViewTrainingPlannedStatus.cs",
+              "RelativeToolTip": "Models\\classes\\ViewTrainingPlannedStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T14:32:35.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ViewTrainingEvaluationResponseCount.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\ViewTrainingEvaluationResponseCount.cs",
+              "RelativeDocumentMoniker": "Models\\classes\\ViewTrainingEvaluationResponseCount.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\ViewTrainingEvaluationResponseCount.cs",
+              "RelativeToolTip": "Models\\classes\\ViewTrainingEvaluationResponseCount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T09:06:55.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ViewTrainingEvaluationGeneralAverageScore.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\ViewTrainingEvaluationGeneralAverageScore.cs",
+              "RelativeDocumentMoniker": "Models\\classes\\ViewTrainingEvaluationGeneralAverageScore.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\ViewTrainingEvaluationGeneralAverageScore.cs",
+              "RelativeToolTip": "Models\\classes\\ViewTrainingEvaluationGeneralAverageScore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T08:48:22.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ViewTrainingEvaluationAverageScore.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\ViewTrainingEvaluationAverageScore.cs",
+              "RelativeDocumentMoniker": "Models\\classes\\ViewTrainingEvaluationAverageScore.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\ViewTrainingEvaluationAverageScore.cs",
+              "RelativeToolTip": "Models\\classes\\ViewTrainingEvaluationAverageScore.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T08:48:01.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "ProfileRepository.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\ProfileRepository.cs",
+              "RelativeDocumentMoniker": "Models\\repository\\ProfileRepository.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\ProfileRepository.cs",
+              "RelativeToolTip": "Models\\repository\\ProfileRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T12:33:44.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "ViewAccessProfile.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\ViewAccessProfile.cs",
+              "RelativeDocumentMoniker": "Models\\classes\\ViewAccessProfile.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\ViewAccessProfile.cs",
+              "RelativeToolTip": "Models\\classes\\ViewAccessProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T08:49:56.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "ViewRoleProfile.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\ViewRoleProfile.cs",
+              "RelativeDocumentMoniker": "Models\\classes\\ViewRoleProfile.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\ViewRoleProfile.cs",
+              "RelativeToolTip": "Models\\classes\\ViewRoleProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T08:48:24.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "AccessProfile.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\AccessProfile.cs",
+              "RelativeDocumentMoniker": "Models\\classes\\AccessProfile.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\AccessProfile.cs",
+              "RelativeToolTip": "Models\\classes\\AccessProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T07:33:43.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Access.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\Access.cs",
+              "RelativeDocumentMoniker": "Models\\classes\\Access.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\Access.cs",
+              "RelativeToolTip": "Models\\classes\\Access.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T07:33:24.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "RoleProfile.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\RoleProfile.cs",
+              "RelativeDocumentMoniker": "Models\\classes\\RoleProfile.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\RoleProfile.cs",
+              "RelativeToolTip": "Models\\classes\\RoleProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T07:32:13.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Profile.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\Profile.cs",
+              "RelativeDocumentMoniker": "Models\\classes\\Profile.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\Profile.cs",
+              "RelativeToolTip": "Models\\classes\\Profile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T07:31:39.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "EvaluationTokenRepository.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\EvaluationTokenRepository.cs",
+              "RelativeDocumentMoniker": "Models\\repository\\EvaluationTokenRepository.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\EvaluationTokenRepository.cs",
+              "RelativeToolTip": "Models\\repository\\EvaluationTokenRepository.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAjwCcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T11:27:03.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "EvaluationToken.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\EvaluationToken.cs",
+              "RelativeDocumentMoniker": "Models\\classes\\EvaluationToken.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\EvaluationToken.cs",
+              "RelativeToolTip": "Models\\classes\\EvaluationToken.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T11:16:26.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "CommentSanitizer.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Services\\CommentSanitizer.cs",
+              "RelativeDocumentMoniker": "Services\\CommentSanitizer.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Services\\CommentSanitizer.cs",
+              "RelativeToolTip": "Services\\CommentSanitizer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T08:36:14.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SendingStatusRepository.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\SendingStatusRepository.cs",
+              "RelativeDocumentMoniker": "Models\\repository\\SendingStatusRepository.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\SendingStatusRepository.cs",
+              "RelativeToolTip": "Models\\repository\\SendingStatusRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAIA1wB0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T12:44:02.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SendingStatus.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\SendingStatus.cs",
+              "RelativeDocumentMoniker": "Models\\classes\\SendingStatus.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\SendingStatus.cs",
+              "RelativeToolTip": "Models\\classes\\SendingStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T12:43:20.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TrainingEvaluationStatusRepository.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\TrainingEvaluationStatusRepository.cs",
+              "RelativeDocumentMoniker": "Models\\repository\\TrainingEvaluationStatusRepository.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\TrainingEvaluationStatusRepository.cs",
+              "RelativeToolTip": "Models\\repository\\TrainingEvaluationStatusRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T12:31:56.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "TrainingEvaluationStatus.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\TrainingEvaluationStatus.cs",
+              "RelativeDocumentMoniker": "Models\\classes\\TrainingEvaluationStatus.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\TrainingEvaluationStatus.cs",
+              "RelativeToolTip": "Models\\classes\\TrainingEvaluationStatus.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAawCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T12:30:04.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GenerateJwtTokenForLink.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Services\\GenerateJwtTokenForLink.cs",
+              "RelativeDocumentMoniker": "Services\\GenerateJwtTokenForLink.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Services\\GenerateJwtTokenForLink.cs",
+              "RelativeToolTip": "Services\\GenerateJwtTokenForLink.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T10:50:27.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "TrainingEvaluationScoreRepository.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\TrainingEvaluationScoreRepository.cs",
+              "RelativeDocumentMoniker": "Models\\repository\\TrainingEvaluationScoreRepository.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\TrainingEvaluationScoreRepository.cs",
+              "RelativeToolTip": "Models\\repository\\TrainingEvaluationScoreRepository.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAYwDoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T06:50:20.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "TrainingEvaluationRepository.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\TrainingEvaluationRepository.cs",
+              "RelativeDocumentMoniker": "Models\\repository\\TrainingEvaluationRepository.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\TrainingEvaluationRepository.cs",
+              "RelativeToolTip": "Models\\repository\\TrainingEvaluationRepository.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAkwB8AAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T06:45:31.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "TrainingEvaluationScore.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\TrainingEvaluationScore.cs",
+              "RelativeDocumentMoniker": "Models\\classes\\TrainingEvaluationScore.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\TrainingEvaluationScore.cs",
+              "RelativeToolTip": "Models\\classes\\TrainingEvaluationScore.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAowCcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T06:44:45.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "TrainingEvaluation.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\TrainingEvaluation.cs",
+              "RelativeDocumentMoniker": "Models\\classes\\TrainingEvaluation.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\TrainingEvaluation.cs",
+              "RelativeToolTip": "Models\\classes\\TrainingEvaluation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T06:44:28.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "SendScoreEvaluationParam.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\SendScoreEvaluationParam.cs",
+              "RelativeDocumentMoniker": "Models\\classes\\SendScoreEvaluationParam.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\SendScoreEvaluationParam.cs",
+              "RelativeToolTip": "Models\\classes\\SendScoreEvaluationParam.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T18:24:35.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "SendMailEvaluationParam.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\SendMailEvaluationParam.cs",
+              "RelativeDocumentMoniker": "Models\\classes\\SendMailEvaluationParam.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\SendMailEvaluationParam.cs",
+              "RelativeToolTip": "Models\\classes\\SendMailEvaluationParam.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T17:08:25.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TrainingEvaluationController.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Controllers\\TrainingEvaluationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TrainingEvaluationController.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Controllers\\TrainingEvaluationController.cs",
+              "RelativeToolTip": "Controllers\\TrainingEvaluationController.cs",
+              "ViewState": "AgIAANsAAAAAAAAAAAAswPEAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T13:22:36.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ItemTrainingEvaluationRepository.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\ItemTrainingEvaluationRepository.cs",
+              "RelativeDocumentMoniker": "Models\\repository\\ItemTrainingEvaluationRepository.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\ItemTrainingEvaluationRepository.cs",
+              "RelativeToolTip": "Models\\repository\\ItemTrainingEvaluationRepository.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAnwDAAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T13:14:13.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ItemTrainingEvaluation.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\ItemTrainingEvaluation.cs",
+              "RelativeDocumentMoniker": "Models\\classes\\ItemTrainingEvaluation.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\ItemTrainingEvaluation.cs",
+              "RelativeToolTip": "Models\\classes\\ItemTrainingEvaluation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T13:13:48.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Session.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\Session.cs",
+              "RelativeDocumentMoniker": "Models\\classes\\Session.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\Session.cs",
+              "RelativeToolTip": "Models\\classes\\Session.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T12:26:29.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ViewTrainingSessionEvaluationStatusRepository.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\ViewTrainingSessionEvaluationStatusRepository.cs",
+              "RelativeDocumentMoniker": "Models\\repository\\ViewTrainingSessionEvaluationStatusRepository.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\ViewTrainingSessionEvaluationStatusRepository.cs",
+              "RelativeToolTip": "Models\\repository\\ViewTrainingSessionEvaluationStatusRepository.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAnwBUAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T11:33:57.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ViewTrainingSessionEvaluationStatus.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\ViewTrainingSessionEvaluationStatus.cs",
+              "RelativeDocumentMoniker": "Models\\classes\\ViewTrainingSessionEvaluationStatus.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\ViewTrainingSessionEvaluationStatus.cs",
+              "RelativeToolTip": "Models\\classes\\ViewTrainingSessionEvaluationStatus.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowCYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T11:29:09.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ViewTrainingEvaluationStatusRepository.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\ViewTrainingEvaluationStatusRepository.cs",
+              "RelativeDocumentMoniker": "Models\\repository\\ViewTrainingEvaluationStatusRepository.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\ViewTrainingEvaluationStatusRepository.cs",
+              "RelativeToolTip": "Models\\repository\\ViewTrainingEvaluationStatusRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAnwBUAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T07:57:38.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ViewTrainingEvaluationStatus.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\ViewTrainingEvaluationStatus.cs",
+              "RelativeDocumentMoniker": "Models\\classes\\ViewTrainingEvaluationStatus.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\ViewTrainingEvaluationStatus.cs",
+              "RelativeToolTip": "Models\\classes\\ViewTrainingEvaluationStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T07:56:17.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "TrainingEvaluationTypeRepository.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\TrainingEvaluationTypeRepository.cs",
+              "RelativeDocumentMoniker": "Models\\repository\\TrainingEvaluationTypeRepository.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\TrainingEvaluationTypeRepository.cs",
+              "RelativeToolTip": "Models\\repository\\TrainingEvaluationTypeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T17:49:49.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "TrainingEvaluationType.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\TrainingEvaluationType.cs",
+              "RelativeDocumentMoniker": "Models\\classes\\TrainingEvaluationType.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\TrainingEvaluationType.cs",
+              "RelativeToolTip": "Models\\classes\\TrainingEvaluationType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T17:47:18.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PresenceRequest.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\PresenceRequest.cs",
+              "RelativeDocumentMoniker": "Models\\classes\\PresenceRequest.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\PresenceRequest.cs",
+              "RelativeToolTip": "Models\\classes\\PresenceRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T12:19:56.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "TrainerTypeRepository.cs",
+              "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\TrainerTypeRepository.cs",
+              "RelativeDocumentMoniker": "Models\\repository\\TrainerTypeRepository.cs",
+              "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\TrainerTypeRepository.cs",
+              "RelativeToolTip": "Models\\repository\\TrainerTypeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T11:28:18.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
               "Title": "AppUserRepository.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\AppUserRepository.cs",
               "RelativeDocumentMoniker": "Models\\repository\\AppUserRepository.cs",
               "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\AppUserRepository.cs",
               "RelativeToolTip": "Models\\repository\\AppUserRepository.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAewBsAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAowCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T10:01:28.579Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 33,
               "Title": "Appuser.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\Appuser.cs",
               "RelativeDocumentMoniker": "Models\\classes\\Appuser.cs",
               "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\Appuser.cs",
               "RelativeToolTip": "Models\\classes\\Appuser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T10:00:43.881Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 32,
               "Title": "AdminRepositorycs.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\AdminRepositorycs.cs",
               "RelativeDocumentMoniker": "Models\\repository\\AdminRepositorycs.cs",
               "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\AdminRepositorycs.cs",
               "RelativeToolTip": "Models\\repository\\AdminRepositorycs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwHkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T08:28:05.073Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "ForecastPresenceRepository.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\ForecastPresenceRepository.cs",
               "RelativeDocumentMoniker": "Models\\repository\\ForecastPresenceRepository.cs",
               "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\ForecastPresenceRepository.cs",
               "RelativeToolTip": "Models\\repository\\ForecastPresenceRepository.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBMAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T08:25:43.661Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ForecastPresence.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\ForecastPresence.cs",
               "RelativeDocumentMoniker": "Models\\classes\\ForecastPresence.cs",
               "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\ForecastPresence.cs",
               "RelativeToolTip": "Models\\classes\\ForecastPresence.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAwAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T08:22:54.415Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 34,
               "Title": "Admin.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\Admin.cs",
               "RelativeDocumentMoniker": "Models\\classes\\Admin.cs",
               "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\Admin.cs",
               "RelativeToolTip": "Models\\classes\\Admin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T08:22:08.834Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 54,
               "Title": "UserRoleRepository.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\UserRoleRepository.cs",
               "RelativeDocumentMoniker": "Models\\repository\\UserRoleRepository.cs",
               "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\UserRoleRepository.cs",
               "RelativeToolTip": "Models\\repository\\UserRoleRepository.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAnwBgAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T13:28:36.925Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 61,
               "Title": "GestionFormation.http",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\GestionFormation.http",
               "RelativeDocumentMoniker": "GestionFormation.http",
@@ -294,7 +966,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 77,
               "Title": "UserRoleView.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\UserRoleView.cs",
               "RelativeDocumentMoniker": "Models\\classes\\UserRoleView.cs",
@@ -306,7 +978,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 56,
               "Title": "Role.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\Role.cs",
               "RelativeDocumentMoniker": "Models\\classes\\Role.cs",
@@ -318,19 +990,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 47,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\User.cs",
               "RelativeDocumentMoniker": "Models\\classes\\User.cs",
               "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\User.cs",
               "RelativeToolTip": "Models\\classes\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T12:28:42.876Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 58,
               "Title": "JsonModelBinder.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\JsonModelBinder.cs",
               "RelativeDocumentMoniker": "Models\\classes\\JsonModelBinder.cs",
@@ -342,55 +1014,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 66,
               "Title": "CustomJsonConverters.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Services\\CustomJsonConverters.cs",
               "RelativeDocumentMoniker": "Services\\CustomJsonConverters.cs",
               "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Services\\CustomJsonConverters.cs",
               "RelativeToolTip": "Services\\CustomJsonConverters.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-13T06:26:48.552Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Participants.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\Participants.cs",
               "RelativeDocumentMoniker": "Models\\classes\\Participants.cs",
               "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\Participants.cs",
               "RelativeToolTip": "Models\\classes\\Participants.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T13:03:19.129Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 63,
               "Title": "Employe.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\Employe.cs",
               "RelativeDocumentMoniker": "Models\\classes\\Employe.cs",
               "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\Employe.cs",
               "RelativeToolTip": "Models\\classes\\Employe.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAkwBcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T11:12:15.928Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 17,
               "Title": "EmailRequest.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\EmailRequest.cs",
               "RelativeDocumentMoniker": "Models\\classes\\EmailRequest.cs",
               "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\EmailRequest.cs",
               "RelativeToolTip": "Models\\classes\\EmailRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T09:23:09.227Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 21,
               "Title": "ForecastValues.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\ForecastValues.cs",
               "RelativeDocumentMoniker": "Models\\classes\\ForecastValues.cs",
@@ -402,7 +1074,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 79,
               "Title": "EmailConfiguration.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\EmailConfiguration.cs",
               "RelativeDocumentMoniker": "Models\\classes\\EmailConfiguration.cs",
@@ -414,7 +1086,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 73,
               "Title": "TrainingWithDepartment.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\TrainingWithDepartment.cs",
               "RelativeDocumentMoniker": "Models\\classes\\TrainingWithDepartment.cs",
@@ -426,7 +1098,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 62,
               "Title": "TrainingInvitationTemplate.txt",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Template\\TrainingInvitationTemplate.txt",
               "RelativeDocumentMoniker": "Template\\TrainingInvitationTemplate.txt",
@@ -438,19 +1110,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 70,
               "Title": "EmailTemplateService.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Services\\EmailTemplateService.cs",
               "RelativeDocumentMoniker": "Services\\EmailTemplateService.cs",
               "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Services\\EmailTemplateService.cs",
               "RelativeToolTip": "Services\\EmailTemplateService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBMAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T12:40:30.672Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 80,
               "Title": "TrainingInvitationTemplate.txt",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Template\\TrainingInvitationTemplate.txt",
               "RelativeDocumentMoniker": "Template\\TrainingInvitationTemplate.txt",
@@ -468,25 +1140,25 @@
               "RelativeDocumentMoniker": "Services\\EmailService.cs",
               "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Services\\EmailService.cs",
               "RelativeToolTip": "Services\\EmailService.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAuwGkAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwMkAAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T11:52:26.26Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "IEmailService.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Interfaces\\IEmailService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IEmailService.cs",
               "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Interfaces\\IEmailService.cs",
               "RelativeToolTip": "Interfaces\\IEmailService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T11:50:35.889Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 81,
               "Title": "GestionFormation.csproj",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\GestionFormation.csproj",
               "RelativeDocumentMoniker": "GestionFormation.csproj",
@@ -498,31 +1170,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 46,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
               "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Properties\\launchSettings.json",
               "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-11-06T08:20:52.986Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 29,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAswEwAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAuwIIAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T08:20:23.723Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 74,
               "Title": "SessionRepository.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\SessionRepository.cs",
               "RelativeDocumentMoniker": "Models\\repository\\SessionRepository.cs",
@@ -534,7 +1206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 65,
               "Title": "TrainingOrganizationRepository.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\TrainingOrganizationRepository.cs",
               "RelativeDocumentMoniker": "Models\\repository\\TrainingOrganizationRepository.cs",
@@ -546,37 +1218,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
               "Title": "TrainingRepository.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\TrainingRepository.cs",
               "RelativeDocumentMoniker": "Models\\repository\\TrainingRepository.cs",
               "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\TrainingRepository.cs",
               "RelativeToolTip": "Models\\repository\\TrainingRepository.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowFQAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAmwHAAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-28T06:53:09.444Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 19,
               "Title": "TrainerController.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Controllers\\TrainerController.cs",
               "RelativeDocumentMoniker": "Controllers\\TrainerController.cs",
               "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Controllers\\TrainerController.cs",
               "RelativeToolTip": "Controllers\\TrainerController.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAcwAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAswBsAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-28T06:16:45.489Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 71,
               "Title": "Training.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\Training.cs",
               "RelativeDocumentMoniker": "Models\\classes\\Training.cs",
               "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\Training.cs",
               "RelativeToolTip": "Models\\classes\\Training.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-28T06:12:40.916Z"
             },
@@ -588,74 +1260,74 @@
               "RelativeDocumentMoniker": "Controllers\\TrainingController.cs",
               "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Controllers\\TrainingController.cs",
               "RelativeToolTip": "Controllers\\TrainingController.cs",
-              "ViewState": "AgIAALUAAAAAAAAAAAAwwMQAAABMAAAAAAAAAA==",
+              "ViewState": "AgIAAEwBAAAAAAAAAAAAwG0BAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-28T06:08:32.786Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 76,
               "Title": "DepartementRepository.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\DepartementRepository.cs",
               "RelativeDocumentMoniker": "Models\\repository\\DepartementRepository.cs",
               "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\DepartementRepository.cs",
               "RelativeToolTip": "Models\\repository\\DepartementRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABTAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T13:06:57.432Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 35,
               "Title": "EmployeRepository.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\EmployeRepository.cs",
               "RelativeDocumentMoniker": "Models\\repository\\EmployeRepository.cs",
               "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\EmployeRepository.cs",
               "RelativeToolTip": "Models\\repository\\EmployeRepository.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAA+wCcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwCIAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T13:06:53.743Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 75,
               "Title": "Departement.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\Departement.cs",
               "RelativeDocumentMoniker": "Models\\classes\\Departement.cs",
               "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\Departement.cs",
               "RelativeToolTip": "Models\\classes\\Departement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T13:06:43.92Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 30,
               "Title": "AnthController.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Controllers\\AnthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AnthController.cs",
               "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Controllers\\AnthController.cs",
               "RelativeToolTip": "Controllers\\AnthController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwCQAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAIwE8AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T13:03:41.662Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 53,
               "Title": "TrainerRepository.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\TrainerRepository.cs",
               "RelativeDocumentMoniker": "Models\\repository\\TrainerRepository.cs",
               "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\repository\\TrainerRepository.cs",
               "RelativeToolTip": "Models\\repository\\TrainerRepository.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAYwCkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T12:28:32.58Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 78,
               "Title": "Trainer.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Models\\classes\\Trainer.cs",
               "RelativeDocumentMoniker": "Models\\classes\\Trainer.cs",
@@ -667,37 +1339,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAQwCkAAABmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T12:19:21.604Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 10,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "data\\ApplicationDbContext.cs",
               "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\data\\ApplicationDbContext.cs",
               "RelativeToolTip": "data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAkwB8AAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T12:18:17.035Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "D:\\Fianarana\\STAGE\\projetStage\\gestion-formation-back-end\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-10-25T11:26:41.048Z"
             }
