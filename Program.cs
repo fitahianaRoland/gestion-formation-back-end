@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System.Reflection;
 using System.Text;
@@ -65,6 +66,10 @@ builder.Services.AddCors(options =>
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+builder.Services.AddDbContext<SimDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("SecondDatabase")));
+
+
 // Récupérer tous les types de classe non abstraits dans l'assembly
 var assembly = Assembly.GetExecutingAssembly();
 var serviceTypes = assembly.GetTypes()
@@ -111,7 +116,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddSession(options =>
 {
     options.Cookie.Name = ".gestionformation.Session";
-    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.IdleTimeout = TimeSpan.FromMinutes(1440);
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
@@ -138,8 +143,6 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapControllers();
 
 app.Run();

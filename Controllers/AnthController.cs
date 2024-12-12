@@ -9,17 +9,17 @@ using System.IdentityModel.Tokens.Jwt;
 [ApiController]
 public class AuthController : ControllerBase
 {
-    private readonly AdminRepository _adminRepository;
+    private readonly AppUserRepository _appuser;
 
-    public AuthController(AdminRepository admn)
+    public AuthController(AppUserRepository admn)
     {
-        _adminRepository = admn;
+        _appuser = admn;
     }
 
     [HttpPost("login")]
-    public IActionResult Login(string nom, string password)
+    public IActionResult Login(string email, string password)
     {
-        var adminId = _adminRepository.Authenticate(nom, password);
+        var adminId = _appuser.Authenticate(email, password);
 
         if (adminId == null)
         {

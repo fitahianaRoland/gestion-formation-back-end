@@ -11,25 +11,33 @@ public class TrainingController : ControllerBase
     private readonly ILogger<HomeController> _logger;
     private readonly ApplicationDbContext _context;
     private readonly TrainingRepository _trainingRepository;
-    private readonly SessionRepository _sessionrepository;
 
     public TrainingController(
         ApplicationDbContext context,
         ILogger<HomeController> logger,
-        TrainingRepository training,
-        SessionRepository sessionRepository
+        TrainingRepository training
      )
     {
         _context = context;
         _logger = logger;
         _trainingRepository = training;
-        _sessionrepository = sessionRepository;
     }
 
-    [HttpPut("{id}")]
-    public async Task<IActionResult> UpdateTraining(int id, Training training)
+    [HttpGet("state")]
+    public async Task<IActionResult> GetTrainingByState(int state)
     {
-        var updatedTraining = await _trainingRepository.Update(id, training);
+        var training = await _trainingRepository.FindByState(state);
+        if (training == null)
+        {
+            return NotFound();
+        }
+        return Ok(training);
+    }
+
+    [HttpPut("stateUpdate/{id}")]
+    public async Task<IActionResult> UpdateTrainingState(int id, int state)
+    {
+        var updatedTraining = await _trainingRepository.UpdateState(id, state);
         if (updatedTraining == null)
         {
             return NotFound();
@@ -73,56 +81,37 @@ public class TrainingController : ControllerBase
         return NoContent();
     }
 
-    [HttpPost("addFormation")]
-    public async Task<IActionResult> AddFormation(int departement, int trainertype, string theme, string objective, string place, string trainer, int min, int max, DateTime creation, List<Session> sessions)
+    [HttpPost("AddTraining")]
+    public async Task<IActionResult> AddTraining([FromBody] Training request)
     {
         var trainingva = new Training()
         {
-            DepartementID = departement,
-            TrainerTypeID = trainertype,
-            Theme = theme,
-            Objective = objective,
-            Place = place,
-            TrainerName = trainer,
-            MinNbr = min,
-            MaxNbr = max,
-            Creation = creation.Date
+            DepartementID = request.DepartementID,
+            TrainerTypeID = request.TrainerTypeID,
+            Theme = request.Theme,
+            Objective = request.Objective,
+            Place = request.Place,
+            MinNbr = request.MinNbr,
+            MaxNbr = request.MaxNbr,
+            Creation = request.Creation,
+            Validation = 1,
         };
 
         try
         {
-            if (min > max)
+            if (request.MinNbr > request.MaxNbr)
             {
                 throw new Exception("Le nombre maximum ne doit pas être inférieur au minimum.");
             }
 
             await _trainingRepository.Add(trainingva);
 
-            int generatedId = trainingva.Id;
-
-
-            foreach (var sessionDto in sessions)
-            {
-                var sessioni = new Session()
-                {
-                    TrainingId = generatedId,
-                    StartDate = sessionDto.StartDate,
-                    EndDate = sessionDto.StartDate
-                };
-
-                await _sessionrepository.Add(sessioni);
-            }
-
-            return Ok(new
-            {
-                Training = trainingva,
-                Message = $"{sessions.Count} sessions have been added successfully."
-            });
+            return Ok(trainingva);
         }
         catch (Exception ex)
         {
             return BadRequest(new { message = ex.Message });
         }
-
     }
+
 }

@@ -3,34 +3,20 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-[Table("Employee")]
+[Table("T_SAL")]
 public class Employee
 {
     [Key]
-    [Column("Employee_id")]
+    [Column("SA_CompteurNumero")]
     public int Employee_id { get; set; }
 
-    [Required]
-    [Column("Registration_number")]
-    public string? Registration_number { get; set; }
-
-    [Required]
-    [Column("Name")]
+    [Column("Nom")]
     public string? Name { get; set; }
 
-    [Required]
-    [Column("FirstName")]
+    [Column("Prenom")]
     public string? FirstName { get; set; }
 
-    [Required]
-    [Column("Date_hire")]
-    public DateTime Date_hire { get; set; }
-
-    [Column("department_id")]
-    public int department_id { get; set; }
-
-
-    [Column("Email")]
+    [Column("AdresseMelProfessionnelle")]
     public string? Email { get; set; }
 
 }

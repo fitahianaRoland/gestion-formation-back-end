@@ -9,13 +9,16 @@ public class ApplicationDbContext : DbContext
     }
 
     public DbSet<Departement> Departements { get; set; }
-    public DbSet<Admin> Admins { get; set; }
-    public DbSet<Trainer> Trainers { get; set; } 
+    public DbSet<AppUser> AppUser { get; set; }
     public DbSet<Training> trainings { get; set; }
     public DbSet<Trainer_Type> trainer_Types { get; set; }
-    public DbSet<TrainingOrganization> trainingOrganizations { get; set; }
     public DbSet<Session> session { get; set; }
     public DbSet<Employee> employees { get; set; }
+    public DbSet<Training_request> training_Requests { get; set; }
+    public DbSet<State> states { get; set; }
+    public DbSet<ExternalTraining> externe { get; set; }
+    public DbSet<InternalTraining> interne { get; set; }
+    public DbSet<TrainerOrganization> trainerOrganizations { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -25,17 +28,9 @@ public class ApplicationDbContext : DbContext
             .Property(p => p.Id)
             .HasDefaultValueSql($"NEXT VALUE FOR dept_seq");
 
-        modelBuilder.Entity<Admin>()
+        modelBuilder.Entity<AppUser>()
           .Property(p => p.Id)
           .ValueGeneratedOnAdd();
-
-        modelBuilder.Entity<Trainer>()
-          .Property(p => p.Id)
-          .ValueGeneratedOnAdd();
-
-        modelBuilder.Entity<TrainingOrganization>()
-           .Property(p => p.Id)
-           .ValueGeneratedOnAdd();
 
         modelBuilder.Entity<Trainer_Type>()
             .Property(p => p.Id)
@@ -52,5 +47,25 @@ public class ApplicationDbContext : DbContext
         modelBuilder.Entity<Employee>()
             .Property(p => p.Employee_id)
             .ValueGeneratedOnAdd();
+
+        modelBuilder.Entity<Training_request>()
+           .Property(p => p.Id)
+           .ValueGeneratedOnAdd();
+
+        modelBuilder.Entity<State>()
+           .Property(p => p.Id)
+           .ValueGeneratedOnAdd();
+
+        modelBuilder.Entity<ExternalTraining>()
+           .Property(p => p.Id)
+           .ValueGeneratedOnAdd();
+
+        modelBuilder.Entity<InternalTraining>()
+           .Property(p => p.Id)
+           .ValueGeneratedOnAdd();
+
+        modelBuilder.Entity<TrainerOrganization>()
+           .Property(p => p.Id)
+           .ValueGeneratedOnAdd();
     }
 }

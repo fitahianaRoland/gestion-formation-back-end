@@ -19,9 +19,14 @@ namespace GestionFormation.Models.repository
             return await _context.trainings.ToListAsync() ?? new List<Training>();
         }
 
-        public async Task<Training> FindById(int id)
+        public async Task<Training?> FindById(int id)
         {
             return await _context.trainings.FindAsync(id);
+        }
+
+        public async Task<List<Training>> FindByState(int state)
+        {
+            return await _context.trainings.Where(t => t.Validation == state).ToListAsync();
         }
 
         //create
@@ -53,13 +58,26 @@ namespace GestionFormation.Models.repository
                             Theme = training.Theme,
                             Objective = training.Objective,
                             Place = training.Place,
-                            TrainerName = training.TrainerName,
                             MinNbr = training.MinNbr,
                             MaxNbr = training.MaxNbr,
                             CreationDate = training.Creation,
                             DepartmentName = department.Nom
                         };
             return await query.ToListAsync();
+        }
+
+        public async Task<Training?> UpdateState(int id, int state)
+        {
+            var existingTraining = await FindById(id);
+            if (existingTraining == null)
+            {
+                return null;
+            }
+
+            existingTraining.Validation = state;
+
+            await _context.SaveChangesAsync();
+            return existingTraining;
         }
 
         //niova ny nomanle fonction any
@@ -77,7 +95,6 @@ namespace GestionFormation.Models.repository
             existingTraining.Theme = updatedTraining.Theme;
             existingTraining.Objective = updatedTraining.Objective;
             existingTraining.Place = updatedTraining.Place;
-            existingTraining.TrainerName = updatedTraining.TrainerName;
             existingTraining.MinNbr = updatedTraining.MinNbr;
             existingTraining.MaxNbr = updatedTraining.MaxNbr;
             existingTraining.Creation = updatedTraining.Creation;
