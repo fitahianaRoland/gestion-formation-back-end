@@ -9,6 +9,7 @@ namespace GestionFormation.Models.classes
         [Key]
         [Column("id")]
         public int Id { get; set; }
+
         [Column("description")]
         public string? Nom { get; set; }
     }

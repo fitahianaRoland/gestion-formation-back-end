@@ -23,11 +23,44 @@ namespace GestionFormation.Models.repository
         {
             return await _context.session.FindAsync(id);
         }
-        // GetTrainingBySessionId
-        public async Task<List<Session>?> GetTrainingBySessionId(int id)
+
+        public async Task<Session?> UpdateState(int id, int state)
         {
-            return await _context.session.Where(e => e.TrainingId == id).ToListAsync();
+            var existingTSession = await FindById(id);
+            if (existingTSession == null)
+            {
+                return null;
+            }
+
+            existingTSession.Validation = state;
+
+            await _context.SaveChangesAsync();
+            return existingTSession;
         }
+
+        public async Task<List<Training>> GetValidSessionAsync(int state)
+        {
+            string sqlQuery = $@"
+                SELECT DISTINCT t.*
+                FROM training t
+                JOIN training_session tr ON t.id = tr.training_id
+                WHERE tr.validation_id = {state}";
+
+            try
+            {
+                var results = await _context.trainings
+                    .FromSqlRaw(sqlQuery)
+                    .ToListAsync();
+
+                return results;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Erreur lors de l'exécution de la requête brute.");
+                throw;
+            }
+        }
+
         //create
         public async Task<Session> Add(Session trainingSession)
         {
@@ -57,6 +90,7 @@ namespace GestionFormation.Models.repository
             existingTrainingSession.TrainingId = updatedTrainingSession.TrainingId;
             existingTrainingSession.StartDate = updatedTrainingSession.StartDate;
             existingTrainingSession.EndDate = updatedTrainingSession.EndDate;
+            existingTrainingSession.Validation = updatedTrainingSession.Validation;
 
             await _context.SaveChangesAsync();
             return existingTrainingSession;

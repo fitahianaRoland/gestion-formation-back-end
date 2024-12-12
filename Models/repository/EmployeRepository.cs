@@ -1,56 +1,44 @@
 ﻿using GestionFormation.Models.classes;
 using Microsoft.EntityFrameworkCore;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace GestionFormation.Models.repository
 {
     public class EmployeRepository
     {
-        private readonly ApplicationDbContext _context;
+        private readonly SimDbContext _contextsim;
 
-        public EmployeRepository(ApplicationDbContext context)
+        public EmployeRepository(SimDbContext context)
         {
-            _context = context;
+            _contextsim = context;
         }
 
         public async Task<List<Employee>> FindAll()
         {
-            return await _context.employees.ToListAsync();
+            return await _contextsim.employees.ToListAsync();
         }
 
         public async Task<Employee?> FindById(int id)
         {
-            return await _context.employees.FindAsync(id);
+            return await _contextsim.employees.FindAsync(id);
         }
 
-            public async Task<(List<Employee>, int)> GetEmployeesLimited(string? name, int page, int limit)
+        public async Task<List<Employee>> Search(string lettre)
+        {
+            if (string.IsNullOrWhiteSpace(lettre))
             {
-                int Limit = limit;
-                int skip = (page - 1) * Limit;
-
-                // Récupérer le total d'employés correspondant aux critères
-                var query = _context.employees.AsQueryable();
-
-                if (!string.IsNullOrEmpty(name))
-                {
-                    query = query.Where(e => e.Name.Contains(name) || e.FirstName.Contains(name));
-                }
-
-            // Calculer le total d'employés correspondant aux critères 
-                var totalEmployees = await query.CountAsync();
-
-                // Appliquer la pagination seulement si 'name' est null ou vide
-                List<Employee> employees;
-                if (string.IsNullOrEmpty(name))
-                {
-                    employees = await query.Skip(skip).Take(limit).ToListAsync();
-                }
-                else
-                {
-                    employees = await query.ToListAsync();
-                }
-                return (employees, totalEmployees);
+                return new List<Employee>(); 
             }
 
+            return await _contextsim.employees
+                .Where(e => e.Name.StartsWith(lettre) || e.FirstName.StartsWith(lettre))
+                .ToListAsync();
+        }
 
+        //public async Task<List<Employee>> FindByDeptID(int deptID)
+        //{
+        //    return await _context.employees.Where(t => t.department_id == deptID).ToListAsync();
+        //}
     }
 }
