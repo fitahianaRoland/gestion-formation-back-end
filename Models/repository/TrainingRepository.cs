@@ -25,6 +25,11 @@ namespace GestionFormation.Models.repository
             return await _context.trainings.FindAsync(id) ?? new Training();
         }
 
+        public async Task<List<Training>> FindByState(int state)
+        {
+            return await _context.trainings.Where(t => t.Validation == state).ToListAsync();
+        }
+
         //create
         public async Task<Training> Add(Training training)
         {
@@ -61,6 +66,21 @@ namespace GestionFormation.Models.repository
                             //DepartmentName = department.Nom
                         };
             return await query.ToListAsync();
+        }
+
+        public async Task<Training?> UpdateState(int id, int state, string? motifderefus)
+        {
+            var existingTraining = await FindById(id);
+            if (existingTraining == null)
+            {
+                return null;
+            }
+
+            existingTraining.Validation = state;
+            existingTraining.ReasonRefusal = motifderefus;
+
+            await _context.SaveChangesAsync();
+            return existingTraining;
         }
 
         //niova ny nomanle fonction any

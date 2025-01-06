@@ -39,5 +39,8 @@ namespace GestionFormation.Models.classes
 
         [Column("creation_date")]
         public DateTime Creation { get; set; }
+
+        [Column("validation_id")]
+        public int Validation { get; set; }
     }
 }

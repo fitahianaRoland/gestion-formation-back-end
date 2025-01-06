@@ -87,7 +87,7 @@ public class AuthController : ControllerBase
             issuer: "http://localhost:3002",
             audience: "http://localhost:3002",
             claims: claims,
-            expires: DateTime.Now.AddMinutes(30),
+            expires: DateTime.Now.AddHours(3),
             signingCredentials: credentials);
 
         return new JwtSecurityTokenHandler().WriteToken(token);

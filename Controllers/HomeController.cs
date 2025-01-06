@@ -13,9 +13,14 @@ public class HomeController : ControllerBase
     private readonly DepartementRepository _departementRepository;
     private readonly TrainerTypeRepository _trainertypeRepository;
     private readonly EmployeRepository _employeeRepository;
+    private readonly EmployeSARepository _employesaRepository;
     private readonly ProfileRepository _profileRepository;
     private readonly AdminRepository _adminRepository;
     public readonly AppUserRepository _appUserRepository;
+
+
+    private readonly CategorieRequestRepository _categorieRepository;
+    private readonly StateRepository _stateRepository;
 
     public HomeController(
         ApplicationDbContext context, 
@@ -23,9 +28,13 @@ public class HomeController : ControllerBase
         DepartementRepository dept,
         TrainerTypeRepository trainerType,
         EmployeRepository  employeRepository,
+        EmployeSARepository employesaRepository,
         ProfileRepository profileRepository,
         AdminRepository adminRepository,
-        AppUserRepository appUserRepository
+        AppUserRepository appUserRepository,
+
+        CategorieRequestRepository categorieRequest,
+        StateRepository stateRepository
      )
     {
         _context = context;
@@ -33,9 +42,40 @@ public class HomeController : ControllerBase
         _departementRepository = dept;
         _trainertypeRepository = trainerType;
         _employeeRepository = employeRepository;
+        _employesaRepository = employesaRepository;
         _profileRepository = profileRepository;
         _adminRepository = adminRepository;
         _appUserRepository = appUserRepository;
+
+        _categorieRepository = categorieRequest;
+        _stateRepository = stateRepository;
+    }
+
+    [HttpGet("categories")]
+    public async Task<IActionResult> GetAllCategorieResuest()
+    {
+        var ttype = await _categorieRepository.FindAll();
+        return Ok(ttype);
+    }
+
+    [HttpGet("search")]
+    public async Task<IActionResult> Search(string lettre)
+    {
+        var results = await _employesaRepository.Search(lettre);
+
+        if (results.Count == 0)
+        {
+            return NotFound("Aucun employé trouvé.");
+        }
+
+        return Ok(results);
+    }
+
+    [HttpGet("employesa")]
+    public async Task<IActionResult> GetAllEmployesSA()
+    {
+        var employees = await _employesaRepository.FindAll();
+        return Ok(employees);
     }
 
     [HttpGet("employe")]
