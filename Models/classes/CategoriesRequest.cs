@@ -3,14 +3,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GestionFormation.Models.classes
 {
-    [Table("training_organization")]
-    public class TrainingOrganization
+    [Table("categories_request_offer")]
+    public class CategoriesRequest
     {
         [Key]
         [Column("id")]
         public int Id { get; set; }
 
-        [Column("training_organization")]
-        public string? Nom { get; set; }
+        [Column("description")]
+        public string? Description { get; set; }
     }
 }

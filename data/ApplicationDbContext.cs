@@ -13,10 +13,9 @@ public class ApplicationDbContext : DbContext
 
     public DbSet<Department> Departements { get; set; }
     public DbSet<Admin> Admins { get; set; }
-    public DbSet<Trainer> Trainers { get; set; } 
+    public DbSet<Trainer> Trainers { get; set; }
     public DbSet<Training> trainings { get; set; }
     public DbSet<Trainer_Type> trainer_Types { get; set; }
-    public DbSet<TrainingOrganization> trainingOrganizations { get; set; }
     public DbSet<Session> session { get; set; }
     public DbSet<Employee> employees { get; set; }
     public DbSet<UserRoleView> userRoleView { get; set; }
@@ -44,13 +43,20 @@ public class ApplicationDbContext : DbContext
     public DbSet<ViewTrainingPlannedStatus> viewTrainingPlannedStatus { get; set; }
     public DbSet<ViewTrainingSessionPlannedStatus> viewTrainingSessionPlannedStatuses { get; set; }
     public DbSet<ViewTrainingCompletedStatus> viewTrainingCompletedStatuses { get; set; }
-
     public DbSet<ViewTrainingSessionCompletedStatus> viewTrainingSessionCompletedStatuses { get; set; }
     public DbSet<TrainingSessionStatus> trainingSessionStatus { get; set; }
     public DbSet<ViewTrainingSessionPlannedForCalendar> viewTrainingSessionPlannedForCalendar { get; set; }
     public DbSet<ViewTrainingSessionCompletedForCalendar> viewTrainingSessionCompletedForCalendar { get; set; }
 
-
+    // Nouveaux DbSet
+    public DbSet<Training_request> training_Requests { get; set; }
+    public DbSet<State> states { get; set; }
+    public DbSet<ExternalTraining> externe { get; set; }
+    public DbSet<InternalTraining> interne { get; set; }
+    public DbSet<TrainerOrganization> trainerOrganizations { get; set; }
+    public DbSet<DifferentCost> differentCosts { get; set; }
+    public DbSet<ProspectingDetail> prospectingDetails { get; set; }
+    public DbSet<CategoriesRequest> categories { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -71,10 +77,6 @@ public class ApplicationDbContext : DbContext
         modelBuilder.Entity<Trainer>()
           .Property(p => p.Id)
           .ValueGeneratedOnAdd();
-
-        modelBuilder.Entity<TrainingOrganization>()
-           .Property(p => p.Id)
-           .ValueGeneratedOnAdd();
 
         modelBuilder.Entity<Trainer_Type>()
             .Property(p => p.Id)
@@ -99,61 +101,82 @@ public class ApplicationDbContext : DbContext
         modelBuilder.Entity<TrainingEvaluationType>()
             .Property(p => p.Id)
             .ValueGeneratedOnAdd();
-            
+
         modelBuilder.Entity<UserRoleView>()
             .HasNoKey();
 
         modelBuilder.Entity<ViewTrainingEvaluationStatus>()
             .HasNoKey();
+
         modelBuilder.Entity<ViewTrainingSessionEvaluationStatus>()
             .HasNoKey();
+
         modelBuilder.Entity<ItemTrainingEvaluation>()
            .Property(p => p.Id)
            .ValueGeneratedOnAdd();
+
         modelBuilder.Entity<TrainingEvaluation>()
            .Property(p => p.Id)
            .ValueGeneratedOnAdd();
+
         modelBuilder.Entity<TrainingEvaluationScore>()
             .Property(p => p.Id)
             .ValueGeneratedOnAdd();
+
         modelBuilder.Entity<SendingStatus>()
             .Property(p => p.Id)
             .ValueGeneratedOnAdd();
+
         modelBuilder.Entity<Profil>()
             .Property(p => p.Id)
             .ValueGeneratedOnAdd();
+
         modelBuilder.Entity<RoleProfile>()
             .Property(p => p.Id)
             .ValueGeneratedOnAdd();
+
         modelBuilder.Entity<Access>()
             .Property(p => p.Id)
             .ValueGeneratedOnAdd();
+
         modelBuilder.Entity<AccessProfile>()
             .Property(p => p.Id)
             .ValueGeneratedOnAdd();
+
         modelBuilder.Entity<Role>()
             .Property(p => p.Id)
             .ValueGeneratedOnAdd();
+
         modelBuilder.Entity<ViewAccessProfile>()
             .HasNoKey();
+
         modelBuilder.Entity<ViewRoleProfile>()
             .HasNoKey();
+
         modelBuilder.Entity<ViewTrainingEvaluationAverageScore>()
             .HasNoKey();
+
         modelBuilder.Entity<ViewTrainingEvaluationGeneralAverageScore>()
             .HasNoKey();
+
         modelBuilder.Entity<ViewTrainingEvaluationResponseCount>()
             .HasNoKey();
+
         modelBuilder.Entity<ViewTrainingPlannedStatus>()
             .HasNoKey();
+
         modelBuilder.Entity<ViewTrainingSessionPlannedStatus>()
             .HasNoKey();
+
         modelBuilder.Entity<ViewTrainingCompletedStatus>()
             .HasNoKey();
+
         modelBuilder.Entity<ViewTrainingSessionCompletedStatus>()
             .HasNoKey();
+
         modelBuilder.Entity<TrainingSessionStatus>()
             .HasNoKey();
+
         modelBuilder.Entity<TotalTrainingSessionNumber>().HasNoKey();
         modelBuilder.Entity<TrainingSessionPlannedNumber>().HasNoKey();
         modelBuilder.Entity<TrainingSessionCompletedNumber>().HasNoKey();
@@ -161,5 +184,38 @@ public class ApplicationDbContext : DbContext
         modelBuilder.Entity<EvaluationGeneralAverageScore>().HasNoKey();
         modelBuilder.Entity<ViewTrainingSessionPlannedForCalendar>().HasNoKey();
         modelBuilder.Entity<ViewTrainingSessionCompletedForCalendar>().HasNoKey();
+
+        // Configuration des nouvelles entités
+        modelBuilder.Entity<Training_request>()
+           .Property(p => p.Id)
+           .ValueGeneratedOnAdd();
+
+        modelBuilder.Entity<State>()
+           .Property(p => p.Id)
+           .ValueGeneratedOnAdd();
+
+        modelBuilder.Entity<ExternalTraining>()
+           .Property(p => p.Id)
+           .ValueGeneratedOnAdd();
+
+        modelBuilder.Entity<InternalTraining>()
+           .Property(p => p.Id)
+           .ValueGeneratedOnAdd();
+
+        modelBuilder.Entity<TrainerOrganization>()
+           .Property(p => p.Id)
+           .ValueGeneratedOnAdd();
+
+        modelBuilder.Entity<DifferentCost>()
+           .Property(p => p.Id)
+           .ValueGeneratedOnAdd();
+
+        modelBuilder.Entity<ProspectingDetail>()
+           .Property(p => p.Id)
+           .ValueGeneratedOnAdd();
+
+        modelBuilder.Entity<CategoriesRequest>()
+           .Property(p => p.Id)
+           .ValueGeneratedOnAdd();
     }
 }

@@ -69,6 +69,10 @@ builder.Services.AddCors(options =>
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServerConnection")));
 
+builder.Services.AddDbContext<SimDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("SecondDatabase")));
+
+
 // EmailConfiguration
 builder.Services.Configure<EmailConfiguration>(builder.Configuration.GetSection("EmailConfiguration"));
 
