@@ -100,7 +100,7 @@ public class HomeController : ControllerBase
         {
             return BadRequest("La description ne peut pas être vide.");
         }
-        Profile newProfile = new Profile
+        Profil newProfile = new Profil
         {
             Description = description
         };
@@ -156,7 +156,7 @@ public class HomeController : ControllerBase
     [HttpGet("GetAllProfile")]
     public async Task<IActionResult> GetAllProfile()
     {
-        List<Profile> listProfile = await _adminRepository.GetAllProfile();
+        List<Profil> listProfile = await _adminRepository.GetAllProfile();
         return Ok(listProfile);
     }
 

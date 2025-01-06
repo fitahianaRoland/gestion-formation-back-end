@@ -1,6 +1,8 @@
 ﻿using GestionFormation.Models.classes;
 using GestionFormation.Models.Classes;
 using Microsoft.EntityFrameworkCore;
+using static GestionFormation.Models.repository.ForecastPresenceRepository;
+using static GestionFormation.Repository.TrainingEvaluationRepository;
 
 public class ApplicationDbContext : DbContext
 {
@@ -9,7 +11,7 @@ public class ApplicationDbContext : DbContext
     {
     }
 
-    public DbSet<Departement> Departements { get; set; }
+    public DbSet<Department> Departements { get; set; }
     public DbSet<Admin> Admins { get; set; }
     public DbSet<Trainer> Trainers { get; set; } 
     public DbSet<Training> trainings { get; set; }
@@ -29,7 +31,7 @@ public class ApplicationDbContext : DbContext
     public DbSet<TrainingEvaluationStatus> trainingEvaluationStatus { get; set; }
     public DbSet<SendingStatus> sendingStatus { get; set; }
     public DbSet<EvaluationToken> evaluationToken { get; set; }
-    public DbSet<Profile> profiles { get; set; }
+    public DbSet<Profil> profiles { get; set; }
     public DbSet<RoleProfile> roleProfiles { get; set; }
     public DbSet<Access> accesses { get; set; }
     public DbSet<AccessProfile> accessProfiles { get; set; }
@@ -45,6 +47,8 @@ public class ApplicationDbContext : DbContext
 
     public DbSet<ViewTrainingSessionCompletedStatus> viewTrainingSessionCompletedStatuses { get; set; }
     public DbSet<TrainingSessionStatus> trainingSessionStatus { get; set; }
+    public DbSet<ViewTrainingSessionPlannedForCalendar> viewTrainingSessionPlannedForCalendar { get; set; }
+    public DbSet<ViewTrainingSessionCompletedForCalendar> viewTrainingSessionCompletedForCalendar { get; set; }
 
 
 
@@ -52,7 +56,7 @@ public class ApplicationDbContext : DbContext
     {
         base.OnModelCreating(modelBuilder);
 
-        modelBuilder.Entity<Departement>()
+        modelBuilder.Entity<Department>()
             .Property(p => p.Id)
             .ValueGeneratedOnAdd();
 
@@ -115,7 +119,7 @@ public class ApplicationDbContext : DbContext
         modelBuilder.Entity<SendingStatus>()
             .Property(p => p.Id)
             .ValueGeneratedOnAdd();
-        modelBuilder.Entity<Profile>()
+        modelBuilder.Entity<Profil>()
             .Property(p => p.Id)
             .ValueGeneratedOnAdd();
         modelBuilder.Entity<RoleProfile>()
@@ -150,5 +154,12 @@ public class ApplicationDbContext : DbContext
             .HasNoKey();
         modelBuilder.Entity<TrainingSessionStatus>()
             .HasNoKey();
+        modelBuilder.Entity<TotalTrainingSessionNumber>().HasNoKey();
+        modelBuilder.Entity<TrainingSessionPlannedNumber>().HasNoKey();
+        modelBuilder.Entity<TrainingSessionCompletedNumber>().HasNoKey();
+        modelBuilder.Entity<GlobalPresenceRate>().HasNoKey();
+        modelBuilder.Entity<EvaluationGeneralAverageScore>().HasNoKey();
+        modelBuilder.Entity<ViewTrainingSessionPlannedForCalendar>().HasNoKey();
+        modelBuilder.Entity<ViewTrainingSessionCompletedForCalendar>().HasNoKey();
     }
 }

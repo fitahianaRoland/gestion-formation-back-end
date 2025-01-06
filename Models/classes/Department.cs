@@ -4,12 +4,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace GestionFormation.Models.classes
 {
     [Table("department")]
-    public class Departement
+    public class Department
     {
         [Key]
         [Column("id")]
         public int Id { get; set; }
         [Column("description")]
-        public string? Nom { get; set; }
+        public string? Name { get; set; }
     }
 }

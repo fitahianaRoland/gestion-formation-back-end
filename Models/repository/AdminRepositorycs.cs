@@ -105,9 +105,9 @@ namespace GestionFormation.Models.repository
         {
             return await _context.accesses.ToListAsync() ?? new List<Access>();
         }
-        public async Task<List<Profile>> GetAllProfile()
+        public async Task<List<Profil>> GetAllProfile()
         {
-            return await _context.profiles.ToListAsync() ?? new List<Profile>();
+            return await _context.profiles.ToListAsync() ?? new List<Profil>();
         }
 
         public async Task<List<ViewAccessProfile>> GetAllAccessProfile()

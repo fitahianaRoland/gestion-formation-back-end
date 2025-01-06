@@ -1,5 +1,7 @@
 ﻿using GestionFormation.Models.classes;
 using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations.Schema;
+using static GestionFormation.Models.repository.ForecastPresenceRepository;
 
 namespace GestionFormation.Repository
 {
@@ -51,6 +53,23 @@ namespace GestionFormation.Repository
             var comments = await _context.trainingEvaluation.Where(e => e.TrainingId == training_id && e.TrainingSessionId == training_session_id && !string.IsNullOrEmpty(e.Comment)).ToListAsync();
             return comments;
         }
+
+        public async Task<double> GetEvaluationGeneralAverageScore()
+        {
+            string sql = "select general_average_score from view_training_evaluation_global_average_score";
+            var result = await _context.Set<EvaluationGeneralAverageScore>()
+                                       .FromSqlRaw(sql)
+                                       .SingleOrDefaultAsync();
+            return result?.GeneralAverageScoreNumber ?? 0;
+        }
+
+        public class EvaluationGeneralAverageScore
+        {
+            [Column("general_average_score")]
+            public double GeneralAverageScoreNumber { get; set; }
+        }
+
+
 
     }
 }

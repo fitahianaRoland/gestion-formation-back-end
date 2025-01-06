@@ -26,7 +26,7 @@ namespace GestionFormation.Models.classes
         public int ProfileId { get; set; }
 
         [ForeignKey("ProfileId")]
-        public Profile? profile { get; set; }
+        public Profil? profile { get; set; }
 
     }
 }

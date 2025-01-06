@@ -4,14 +4,17 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GestionFormation.Models.classes
 {
-    [Table("view_training_session_completed_status")]
-    public class ViewTrainingSessionCompletedStatus
+    [Table("view_training_session_planned_for_calendar")]
+    public class ViewTrainingSessionPlannedForCalendar
     {
         [Column("session_id")]
         public int SessionId { get; set; }
 
         [Column("training_id")]
         public int TrainingId { get; set; }
+
+        [Column("theme")]
+        public string Theme { get; set;  }
 
         [Column("start_date")]
         public DateTime StartDate { get; set; }
@@ -45,12 +48,7 @@ namespace GestionFormation.Models.classes
         {
             get
             {
-                return SessionStatusValue switch
-                {
-                    0 => "#f1f1e3", // Pending
-                    20 => "#ffcc00", // In progress
-                    _ => "#2ecc71", // Completed or other
-                };
+                return "#ffcc00";
             }
         }
     }

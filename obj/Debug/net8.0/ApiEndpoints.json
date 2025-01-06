@@ -563,6 +563,16 @@
   },
   {
     "ContainingType": "TrainingController",
+    "Method": "GetDashboardFigure",
+    "RelativePath": "api/Training/dashboard_figure",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrainingController",
     "Method": "DeleteEvaluationType",
     "RelativePath": "api/Training/DeleteEvaluationType",
     "HttpMethod": "DELETE",
@@ -637,11 +647,22 @@
   {
     "ContainingType": "TrainingController",
     "Method": "GetTrainingPlanned",
-    "RelativePath": "api/Training/GetTrainingPlanned",
+    "RelativePath": "api/Training/GetTrainingPlanned/{theme}/{isFilter}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "theme",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "isFilter",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -658,6 +679,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TrainingController",
+    "Method": "GetTrainingSessionListForCalendar",
+    "RelativePath": "api/Training/GetTrainingSessionListForCalendar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

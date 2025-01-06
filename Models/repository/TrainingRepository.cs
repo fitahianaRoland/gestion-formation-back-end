@@ -54,7 +54,7 @@ namespace GestionFormation.Models.repository
                             Theme = training.Theme,
                             Objective = training.Objective,
                             Place = training.Place,
-                            TrainerName = training.TrainerName,
+                            //TrainerName = training.TrainerName,
                             MinNbr = training.MinNbr,
                             MaxNbr = training.MaxNbr,
                             CreationDate = training.Creation,
@@ -78,7 +78,7 @@ namespace GestionFormation.Models.repository
             existingTraining.Theme = updatedTraining.Theme;
             existingTraining.Objective = updatedTraining.Objective;
             existingTraining.Place = updatedTraining.Place;
-            existingTraining.TrainerName = updatedTraining.TrainerName;
+            //existingTraining.TrainerName = updatedTraining.TrainerName;
             existingTraining.MinNbr = updatedTraining.MinNbr;
             existingTraining.MaxNbr = updatedTraining.MaxNbr;
             existingTraining.Creation = updatedTraining.Creation;
@@ -143,9 +143,10 @@ namespace GestionFormation.Models.repository
             }
         }
 
-        public async Task<List<ViewTrainingPlannedStatus>> GetViewTrainingPlannedStatus()
+        public async Task<List<ViewTrainingPlannedStatus>> GetViewTrainingPlannedStatus(bool isFilter, string? theme)
         {
-            return await _context.viewTrainingPlannedStatus.ToListAsync();
+            if (!isFilter) { return await _context.viewTrainingPlannedStatus.ToListAsync(); }
+            else { return await _context.viewTrainingPlannedStatus.Where( e => e.Theme.Contains(theme)).ToListAsync(); }
         }
 
         public async Task<List<ViewTrainingCompletedStatus>> GetViewTrainingCompletedStatus()
@@ -162,6 +163,16 @@ namespace GestionFormation.Models.repository
         public async Task<List<ViewTrainingSessionCompletedStatus>> GetViewTrainingSessionCompletedStatus(int training_id)
         {
             return await _context.viewTrainingSessionCompletedStatuses.Where(e => e.TrainingId == training_id).ToListAsync();
+        }
+
+        public async Task<List<ViewTrainingSessionPlannedForCalendar>> GetViewTrainingSessionPlannedForCalendar()
+        {
+            return await _context.viewTrainingSessionPlannedForCalendar.ToListAsync();
+        }
+
+        public async Task<List<ViewTrainingSessionCompletedForCalendar>> GetViewTrainingSessionCompletedForCalendar()
+        {
+            return await _context.viewTrainingSessionCompletedForCalendar.ToListAsync();
         }
     }
 }

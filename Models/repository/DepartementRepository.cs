@@ -12,12 +12,12 @@ namespace GestionFormation.Models.repository
             _context = context;
         }
 
-        public async Task<List<Departement>> FindAll()
+        public async Task<List<Department>> FindAll()
         {
-            return await _context.Departements.ToListAsync() ?? new List<Departement>();
+            return await _context.Departements.ToListAsync() ?? new List<Department>();
         }
 
-        public async Task<Departement> FindById(int id)
+        public async Task<Department> FindById(int id)
         {
             return await _context.Departements.FindAsync(id);
         }

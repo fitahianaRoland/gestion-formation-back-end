@@ -1,5 +1,6 @@
 ﻿using GestionFormation.Models.classes;
 using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json;
 
 namespace GestionFormation.Models.repository
@@ -83,7 +84,7 @@ namespace GestionFormation.Models.repository
                 string employeeIds = listIntIntoString(listId);
                 string sql = $@"
                     UPDATE forecast_presence
-                    SET state = 1
+                    SET state = 1   
                     WHERE training_id = {trainingId}
                       AND training_session_id = {trainingSessionId}
                       AND id IN ({employeeIds})";
@@ -104,5 +105,63 @@ namespace GestionFormation.Models.repository
             }
             return string.Join(",", listint);
         }
+
+        public async Task<int> GetTotalTrainingSessionNumber()
+        {
+            string sql = "select count(session_id) as totalTrainingSessionNumber from view_training_session_planned_status";
+            var result = await _context.Set<TotalTrainingSessionNumber>()
+                                       .FromSqlRaw(sql)
+                                       .SingleOrDefaultAsync();
+            return result?.TotalTrainingSessionsNumber ?? 0;
+        }
+
+        public async Task<int> GetParticipantsPlanned()
+        {
+            string sql = "SELECT COUNT(session_id) AS TrainingSessionsPlannedNumber FROM view_training_session_planned_number";
+            var result = await _context.Set<TrainingSessionPlannedNumber>()
+                                       .FromSqlRaw(sql)
+                                       .SingleOrDefaultAsync();
+            return result?.TrainingSessionsPlannedNumber ?? 0;
+        }
+
+        public async Task<int> GetPresentParticipants()
+        {
+            string sql = "SELECT count(session_id) AS TrainingSessionsCompletedNumber FROM view_training_session_completed_number";
+            var result = await _context.Set<TrainingSessionCompletedNumber>()
+                                       .FromSqlRaw(sql)
+                                       .SingleOrDefaultAsync();
+            return result?.TrainingSessionsCompletedNumber ?? 0;
+        }
+
+        public async Task<double> GetGlobalPresenceRate()
+        {
+            string sql = "select global_presence_rate from view_global_presence_rate";
+            var result = await _context.Set<GlobalPresenceRate>()
+                                       .FromSqlRaw(sql)
+                                       .SingleOrDefaultAsync();
+            return result?.GlobalPresenceRateNumber ?? 0;
+        }
+        public class TotalTrainingSessionNumber
+        {
+            [Column("totalTrainingSessionNumber")]
+            public int TotalTrainingSessionsNumber { get; set; }
+        }
+        public class TrainingSessionPlannedNumber
+        {
+            public int TrainingSessionsPlannedNumber { get; set; }
+        }
+
+        public class TrainingSessionCompletedNumber
+        {
+            public int TrainingSessionsCompletedNumber { get; set; }
+        }
+
+        public class GlobalPresenceRate
+        {
+            [Column("global_presence_rate")]
+            public double GlobalPresenceRateNumber { get; set; }
+        }
+
+
     }
 }

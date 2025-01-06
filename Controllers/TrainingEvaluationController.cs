@@ -197,7 +197,6 @@ namespace GestionFormation.Controllers
                         int sending_status_id = await _sendingStatusRepository.GetIdByValueAsync(_validated_result_status);
                         TrainingEvaluationStatus trainingEvaluationStatus = new TrainingEvaluationStatus(trainingId, trainingSessionId, sending_status_id);
                         await _trainingEvaluationStatusRepository.AddAsync(trainingEvaluationStatus);
-                        await _context.SaveChangesAsync();
                         _context.trainingEvaluation.Add(trainingEvaluation);
                         await _context.SaveChangesAsync();
                         var scores = TrainingEvaluationScore.Fusion_TrainingEvaluationId_TrainingEvaluationTypeId(trainingEvaluation.Id, sendScoreEvaluationParam.ListTrainingEvaluationTypeScore);

@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 namespace GestionFormation.Models.classes
 {
     [Table("profile")]
-    public class Profile
+    public class Profil
     {
         [Key]
         [Column("id")]

@@ -26,6 +26,8 @@ public class TrainingController : ControllerBase
     private readonly ViewTrainingSessionEvaluationStatusRepository _viewTrainingSessionEvaluationStatusRepository;
     private readonly SendingStatusRepository _sendingStatusRepository;
     private readonly TrainingSessionStatusRepository _trainingSessionStatusRepository;
+    private readonly TrainingEvaluationRepository _trainingEvaluationRepository;
+    private readonly TrainingService _trainingService;
     private readonly int _already_planned;
     private readonly int _already_completed;
 
@@ -41,7 +43,10 @@ public class TrainingController : ControllerBase
         ViewTrainingEvaluationStatusRepository viewTrainingEvaluationStatusRepository,
         ViewTrainingSessionEvaluationStatusRepository viewTrainingSessionEvaluationStatusRepository,
         SendingStatusRepository sendingStatusRepository,
-        TrainingSessionStatusRepository trainingSessionStatusRepository
+        TrainingSessionStatusRepository trainingSessionStatusRepository,
+        TrainingEvaluationRepository trainingEvaluationRepository,
+        TrainingService trainingService
+
      )
     {
         _context = context;
@@ -56,8 +61,28 @@ public class TrainingController : ControllerBase
         _viewTrainingSessionEvaluationStatusRepository = viewTrainingSessionEvaluationStatusRepository;
         _sendingStatusRepository = sendingStatusRepository;
         _trainingSessionStatusRepository = trainingSessionStatusRepository;
+        _trainingEvaluationRepository = trainingEvaluationRepository;
+        _trainingService = trainingService;
         _already_planned = 10;
         _already_completed = 20;
+    }
+
+    [HttpGet("dashboard_figure")]
+    public async Task<IActionResult> GetDashboardFigure()
+    {
+        var totalTrainingSessionNumber = await _forecastPresenceRepository.GetTotalTrainingSessionNumber();
+        var trainingSessionPlanneddNumber = await _forecastPresenceRepository.GetParticipantsPlanned();
+        var trainingSessionCompletedNumber = await _forecastPresenceRepository.GetPresentParticipants();
+        var globalPresenceRate = await _forecastPresenceRepository.GetGlobalPresenceRate();
+        var evaluationGeneralAverageScore = await _trainingEvaluationRepository.GetEvaluationGeneralAverageScore();
+        return Ok(new
+        {
+            TotalTrainingSessionNumber = totalTrainingSessionNumber,
+            TrainingSessionPlannedNumber = trainingSessionPlanneddNumber,
+            TrainingSessionCompletedNumber = trainingSessionCompletedNumber,
+            GlobalPresenceRate = globalPresenceRate,
+            EvaluationGeneralAverageScore = evaluationGeneralAverageScore
+        });
     }
 
     [HttpPut("session/{id}")]
@@ -156,7 +181,7 @@ public class TrainingController : ControllerBase
             Theme = theme,
             Objective = objective,
             Place = place,
-            TrainerName = trainer,
+            //TrainerName = trainer,
             MinNbr = min,
             MaxNbr = max,
             Creation = creation.Date
@@ -210,7 +235,7 @@ public class TrainingController : ControllerBase
         Console.WriteLine($"File: {emailRequest.File?.FileName}");
         try
         {
-            if(file == null)
+            if (file == null)
             {
                 throw new ArgumentException("ajouter une pièce jointe");
             }
@@ -220,7 +245,7 @@ public class TrainingController : ControllerBase
                 await _forecastPresenceRepository.AddForecast(emailRequest);
                 //await _emailService.SendEmailParticipatsAsync(emailRequest);
                 int idStatus = await _trainingSessionStatusRepository.GetIdByValueAsync(_already_planned);
-                await _trainingRepository.InsertTrainingSessionPlannedStatus(emailRequest.TrainingId,emailRequest.TrainingSessionId,idStatus);
+                await _trainingRepository.InsertTrainingSessionPlannedStatus(emailRequest.TrainingId, emailRequest.TrainingSessionId, idStatus);
                 return Ok("Participants enregistré et Email envoyé avec succès !");
             }
             else
@@ -231,8 +256,8 @@ public class TrainingController : ControllerBase
         }
         catch (ArgumentException ex)
         {
-            Console.WriteLine(" *** "+ ex.Message +" *** ");
-            return BadRequest(new { message = ex.Message} );
+            Console.WriteLine(" *** " + ex.Message + " *** ");
+            return BadRequest(new { message = ex.Message });
         }
         catch (Exception ex)
         {
@@ -242,15 +267,15 @@ public class TrainingController : ControllerBase
     }
 
     [HttpGet("ListEmployeeForecast")]
-    public async Task<IActionResult> GetListEmployeeForecast(int trainingId,int trainingSessionId, int state,string name = null)
+    public async Task<IActionResult> GetListEmployeeForecast(int trainingId, int trainingSessionId, int state, string name = null)
     {
         try
         {
-            Console.WriteLine(" id " + trainingId + " idsession " + trainingSessionId + " nom: "+ name);
-            var listEmployeeForecast = await _forecastPresenceRepository.ListForecast(trainingId,trainingSessionId,name,state);
+            Console.WriteLine(" id " + trainingId + " idsession " + trainingSessionId + " nom: " + name);
+            var listEmployeeForecast = await _forecastPresenceRepository.ListForecast(trainingId, trainingSessionId, name, state);
             foreach (var i in listEmployeeForecast)
             {
-                Console.WriteLine("-------------"+i);
+                Console.WriteLine("-------------" + i);
             }
             return Ok(listEmployeeForecast);
         }
@@ -286,7 +311,7 @@ public class TrainingController : ControllerBase
             {
                 Console.WriteLine(ex.Message);
                 await transaction.RollbackAsync();
-                return BadRequest(new { message = ex.Message});
+                return BadRequest(new { message = ex.Message });
             }
         }
     }
@@ -296,11 +321,11 @@ public class TrainingController : ControllerBase
     {
         try
         {
-            if(description == "")
+            if (description == "")
             {
                 return BadRequest("inserer un description !");
             }
-            Console.WriteLine(" hello "+ description);
+            Console.WriteLine(" hello " + description);
             TrainingEvaluationType trainingEvaluationType = new TrainingEvaluationType();
             trainingEvaluationType.Name = description;
             await _trainingEvaluationTypeRepository.Add(trainingEvaluationType);
@@ -308,14 +333,14 @@ public class TrainingController : ControllerBase
         }
         catch (Exception ex)
         {
-            return BadRequest("erreur lors de l'insertion"+ex.Message);
+            return BadRequest("erreur lors de l'insertion" + ex.Message);
         }
     }
     [HttpGet("GetEvaluationType")]
     public async Task<IActionResult> GetEvaluationType()
     {
         List<TrainingEvaluationType> listTrainingEvaluationType = await _trainingEvaluationTypeRepository.FindAll();
-        if(listTrainingEvaluationType == null)
+        if (listTrainingEvaluationType == null)
         {
             return BadRequest("il n'y a pas de liste !");
         }
@@ -333,7 +358,7 @@ public class TrainingController : ControllerBase
     [HttpGet("GetAllTrainingsWithStatus/{state}/{isFilter}")]
     public async Task<IActionResult> GetAllTrainingsWithStatus(int state, bool isFilter = false)
     {
-        var trainings = await _viewTrainingEvaluationStatusRepository.FindByState(isFilter,state);
+        var trainings = await _viewTrainingEvaluationStatusRepository.FindByState(isFilter, state);
         var sendingStatus = await _sendingStatusRepository.GetAllAsync();
         return Ok(new
         {
@@ -350,10 +375,10 @@ public class TrainingController : ControllerBase
     }
 
     //forecast
-    [HttpGet("GetTrainingPlanned")]
-    public async Task<IActionResult> GetTrainingPlanned()
+    [HttpGet("GetTrainingPlanned/{theme?}/{isFilter}")]
+    public async Task<IActionResult> GetTrainingPlanned(string? theme = null, bool isFilter = false)
     {
-        var trainings = await _trainingRepository.GetViewTrainingPlannedStatus();
+        var trainings = await _trainingRepository.GetViewTrainingPlannedStatus(isFilter,theme);
         return Ok(trainings);
     }
     //forecast
@@ -379,5 +404,19 @@ public class TrainingController : ControllerBase
         return Ok(trainings);
     }
 
+    //AGENDA: 
+    [HttpGet("GetTrainingSessionListForCalendar")]
+    public async Task<IActionResult> GetTrainingSessionListForCalendar()
+    {
+        var sessionsPlanifiees = await _trainingRepository.GetViewTrainingSessionPlannedForCalendar();
+        var sessionsRealisees = await _trainingRepository.GetViewTrainingSessionCompletedForCalendar();
 
+        var sessionsPlanifieesSeparees = _trainingService.TrainingSessionPlannedSeparerSessionsParJourEtHeure(sessionsPlanifiees, "Formation prévue");
+        var sessionsRealiseesSeparees = _trainingService.TrainingSessionCompletedSeparerSessionsParJourEtHeure(sessionsRealisees, "Formation réalisée");
+        return Ok(new
+        {
+            TrainingSessionPlannedForCalendar = sessionsPlanifieesSeparees,
+            TrainingSessionCompletedForCalendar = sessionsRealiseesSeparees
+        });
+    }
 }

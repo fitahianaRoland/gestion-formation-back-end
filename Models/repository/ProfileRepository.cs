@@ -12,12 +12,12 @@ namespace GestionFormation.Models.repository
             _context = context;
         }
 
-        public async Task<List<Profile>> FindAll()
+        public async Task<List<Profil>> FindAll()
         {
-            return await _context.profiles.ToListAsync() ?? new List<Profile>();
+            return await _context.profiles.ToListAsync() ?? new List<Profil>();
         }
 
-        public async Task Add(Profile newProfile)
+        public async Task Add(Profil newProfile)
         {
             if (newProfile == null)
             {

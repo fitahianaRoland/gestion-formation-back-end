@@ -25,14 +25,17 @@ namespace GestionFormation.Models.classes
         [Column("place")]
         public string? Place { get; set; }
 
-        [Column("trainer_name")]
-        public string? TrainerName { get; set; }
+        //[Column("trainer_name")]
+        //public string? TrainerName { get; set; }
 
         [Column("min_nbr")]
         public int MinNbr { get; set; }
 
         [Column("max_nbr")]
         public int MaxNbr { get; set; }
+
+        [Column("reason_refusal")]
+        public string? ReasonRefusal { get; set; }
 
         [Column("creation_date")]
         public DateTime Creation { get; set; }

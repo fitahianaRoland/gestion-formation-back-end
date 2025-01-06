@@ -19,11 +19,17 @@ namespace GestionFormation.Models.classes
         [Column("end_date")]
         public DateTime EndDate { get; set; }
 
-        [Column("start_hour")]
-        public TimeSpan StartHour { get; set; }
+        [Column("morning_start_hour")]
+        public TimeSpan? MorningStartHour { get; set; }
 
-        [Column("end_hour")]
-        public TimeSpan EndHour { get; set; }
+        [Column("morning_end_hour")]
+        public TimeSpan? MorningEndHour { get; set; }
+
+        [Column("afternoon_start_hour")]
+        public TimeSpan? AfternoonStartHour { get; set; }
+
+        [Column("afternoon_end_hour")]
+        public TimeSpan? AfternoonEndHour { get; set; }
 
         [Column("session_status_id")]
         public int SessionStatusId { get; set; }
